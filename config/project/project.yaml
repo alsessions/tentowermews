@@ -1,0 +1,440 @@
+dateModified: 1723563904
+email:
+  fromEmail: fultonchain@10towermews.com
+  fromName: '10 Tower Mews'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    host: smtp.zoho.com
+    password: en3Fact!
+    port: '465'
+    useAuthentication: '1'
+    username: fultonchain@10towermews.com
+  transportType: craft\mail\transportadapters\Smtp
+fs:
+  covers:
+    hasUrls: true
+    name: Covers
+    settings:
+      path: '@webroot/covers'
+    type: craft\fs\Local
+    url: '@web/covers'
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: '@webroot/images'
+    type: craft\fs\Local
+    url: '@web/images'
+  photos:
+    hasUrls: true
+    name: Photos
+    settings:
+      path: '@webroot/photos'
+    type: craft\fs\Local
+    url: '@web/photos'
+meta:
+  __names__:
+    0c15de54-9539-4fc4-b25a-f42898dcc946: 'Optimized Blog' # Optimized Blog
+    0c37c63b-127b-4f2b-91fa-23c13ccac895: Places # Places
+    0cc1dbf0-fa4d-46f4-a8db-63d218f36275: 'Photo Album' # Photo Album
+    0ced97c5-a696-4d69-bc59-1e2f16d0e853: Places # Places
+    1c05ba86-d419-4de7-af1a-89c2818ee972: 'Photo Thumbnail' # Photo Thumbnail
+    2d0f1a10-6be3-46ff-8cce-097551af1b7b: Citation # Citation
+    3b8b8daf-4ace-451e-9a3d-b76af1bd42b7: 'Books Index' # Books Index
+    3b874cdd-235e-4c88-9d4f-489d9c960b44: Markdown # Markdown
+    3bacf350-5d8e-41b5-a2a2-eabd1c3f82d8: BookCover # BookCover
+    3c1309a8-4142-4884-8c10-87bbf7968711: Simple # Simple
+    3f5a3896-0a71-4283-a79c-9b502a191720: Blog # Blog
+    3fc3bd38-a76c-403b-bfd1-becc75f3d351: 'Rich Content' # Rich Content
+    3fff4b8c-88f8-4080-9187-c446bc9119c1: Download # Download
+    4a764a33-6799-4a0e-bd82-c8881e6f80ca: New # New
+    7a71015f-850c-47c5-b3ce-8bde92711e20: 'Blog Index' # Blog Index
+    9e383491-50d0-4bdf-8a63-e3536e92e5e8: Link # Link
+    15cbed08-d248-462b-941f-b1bb49ea0e1b: Square480 # Square480
+    19a65a29-752e-4fe3-a96e-ab3ee58a26cd: 'Optimized Cover Small' # Optimized Cover Small
+    24c96ce3-6cc0-41dd-ae86-6a28a20cec60: Markdown # Markdown
+    24e21415-b3d1-49cb-8e99-54b8b0abb95e: Description # Description
+    29a9d713-4234-429a-a978-233cf284b624: 'Hot Spot' # Hot Spot
+    42adcd53-84e4-4d36-a097-c6fffabce4cc: 'Info Bubble' # Info Bubble
+    72ebf221-eded-472e-9c57-8f70eb819bd6: 'Rich Text' # Rich Text
+    74c2a047-382e-43f7-a9e0-96ccdaab51c1: Map # Map
+    76eff017-fd14-466e-be95-e7220bdf3020: Gallery # Gallery
+    82fc4c03-a718-46b4-b01a-ea38f9b06bf9: 'Site Contact' # Site Contact
+    132fc26e-094c-4149-a992-4a113940873f: Images # Images
+    161cd8f7-15f0-40c3-8a3f-e5d724a86f4f: Homepage # Homepage
+    216b9a32-0318-4dc6-931b-56b9a8f9e6a1: Caption # Caption
+    598b58db-7333-4fcc-a988-2c4dec82d798: 'Gallery Image' # Gallery Image
+    603e5ad4-a5f7-48bb-8297-7cab885ecbdb: Homepage # Homepage
+    863e8146-e59c-4531-9acf-06028a91f4c4: 'Download Link' # Download Link
+    7443d378-f073-42ec-a7f5-198574bb19e2: 'Places Index' # Places Index
+    8251a6d8-a905-4f48-b029-09acebd5f68d: Blockquote # Blockquote
+    16151d14-b7b0-4249-b12d-ba3be20f1bc7: 'Optimized Image (1200w,640w,480w)' # Optimized Image (1200w,640w,480w)
+    016740df-078c-4322-b1ca-c53663b47c4f: Image # Image
+    474274ea-afb2-4426-94e9-3dadf756efc2: Photo # Photo
+    638904cd-1200-4b70-9e61-6ee6e7254d64: 'Hot Spots' # Hot Spots
+    6639307a-8f0d-43f9-8975-fe752c12a0ed: 'Craft 5 Boilerplate' # Craft 5 Boilerplate
+    52756311-3745-491c-8d06-92903af03698: 'Hot Spot' # Hot Spot
+    74223630-d71f-4cd3-a085-0621ac9a7bed: 'Cover Image' # Cover Image
+    a2b13a80-c6af-4cbc-8d6e-a591c1e9d2fa: 'Longform Content' # Longform Content
+    a4d3998f-1664-4044-a128-b275085d0973: 'ContactForm Header' # ContactForm Header
+    b00e8e5e-8178-4c9e-b9c3-45fda13ed1c5: 'Optimized Cover small' # Optimized Cover small
+    b9f3864b-8297-47d3-b09a-b77f9bcec822: 'Photos Index' # Photos Index
+    b719f79d-7157-42ea-9849-df4e3a67f932: Item # Item
+    ba77ab43-a317-43ef-bafe-9d9f4e0b38e9: Photos # Photos
+    c2d3356b-6a53-4e5a-934c-aefbb6177b34: Address # Address
+    c754f218-e9d4-427a-8883-104a5bf39528: 'Book Author' # Book Author
+    cb4ca59d-8944-4593-9b7a-f2ae43966e16: Images # Images
+    d7a74546-c23d-4fd4-8b0b-59ee25014d8a: 'Hot Spots' # Hot Spots
+    d18c4377-f7e9-4de2-8d05-bc52b6bbbf55: '10 Tower Mews' # 10 Tower Mews
+    d41d9406-8dfb-431b-a7d0-f7bf1ab93e6b: Covers # Covers
+    da96616f-f2e8-473b-ab27-e0b3d4ec8d76: 'Public Schema' # Public Schema
+    db490998-4187-455b-9d87-ecc31503d9bb: 'New Book' # New Book
+    dbc6b460-f8a2-4027-844e-40e6c2e07a78: Books # Books
+    deea1f26-8e02-440d-bc87-bc667b3a629b: Quote # Quote
+    df72c073-c80a-4502-adb8-96d4dc65ddf2: 'Longform Content' # Longform Content
+    e7a8d203-6365-4e81-a7e3-bf9b4f8952bb: 'Optimized Photo (768w,480w)' # Optimized Photo (768w,480w)
+    e9883639-f4a3-4181-b3d8-562dae75d60f: 'Optimized Book Cover' # Optimized Book Cover
+    ed67c01c-23bc-42c9-9d71-fc6a4195951c: Address # Address
+    f0b1e364-e011-4cf6-88d6-dd9bbf6213a1: Book # Book
+    f7ef8b6d-5cd5-4441-b33f-5e522e848044: Photos # Photos
+    fa1f735b-d09f-480a-b4e2-a8ce0d80bc78: Blog # Blog
+    fedbc754-a6c8-437a-aa0e-7103972762c9: 'Published Year' # Published Year
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  cp-clearcache:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: PP0XT5LUFHEPK0BR4I86MYI0
+    schemaVersion: 3.4.6
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      captchas:
+        __assoc__:
+          -
+            - recaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Recaptcha
+                -
+                  - enabled
+                  - '1'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - recaptcha
+                      -
+                        - secretKey
+                        - 6LdKKA4qAAAAAOTgQ5OtR8Cw7lvMkDJK8tKO02TL
+                      -
+                        - siteKey
+                        - 6LdKKA4qAAAAAHbnpzxgGu-4BwvipHHNzWAIAg31
+                      -
+                        - type
+                        - v2_checkbox
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - dark
+                      -
+                        - badge
+                        - bottomright
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.5
+                      -
+                        - scriptLoadingMethod
+                        - asyncDefer
+                      -
+                        - enterpriseType
+                        - score
+          -
+            - hcaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Hcaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - hcaptcha
+                      3:
+                        - size
+                        - normal
+                      4:
+                        - theme
+                        - light
+                      5:
+                        - language
+                        - en
+                      6:
+                        - minScore
+                        - 0.5
+                      7:
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - friendlyCaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\FriendlyCaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - friendlyCaptcha
+                      3:
+                        - language
+                        - en
+          -
+            - turnstile
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Turnstile
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      0:
+                        - handle
+                        - turnstile
+                      3:
+                        - scriptLoadingMethod
+                        - asyncDefer
+                      4:
+                        - theme
+                        - auto
+                      5:
+                        - size
+                        - normal
+                      6:
+                        - appearance
+                        - always
+          -
+            - duplicate
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Duplicate
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - duplicate
+          -
+            - honeypot
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Honeypot
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - honeypot
+          -
+            - javascript
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Javascript
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - javascript
+      defaultDateDisplayType: calendar
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      emptyValuePlaceholder: 'No response.'
+      enableBackSubmission: true
+      enableCsrfValidationForGuests: true
+      enableLargeFieldStorage: false
+      enableUnloadWarning: true
+      includeDraftElementUsage: false
+      includeRevisionElementUsage: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Formie
+      queuePriority: null
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      setOnlyCurrentPagePayload: false
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      submissionsBehaviour:
+        - incomplete
+        - spam
+      useCssLayers: false
+      useQueueForIntegrations: true
+      useQueueForNotifications: true
+      validateCustomTemplates: true
+  google-maps:
+    edition: standard
+    enabled: true
+    licenseKey: DGUQDBJV585FGP170MBR0MI5
+    schemaVersion: 4.5.0
+    settings:
+      browserKey: $GOOGLEMAPS_BROWSERKEY
+      enableJsLogging: true
+      fieldControlSize: 27
+      geolocationService: null
+      ipstackApiAccessKey: null
+      maxmindLicenseKey: null
+      maxmindService: null
+      maxmindUserId: null
+      minifyJsFiles: false
+      serverKey: $GOOGLEMAPS_SERVERKEY
+  image-optimize:
+    edition: standard
+    enabled: true
+    licenseKey: SFP84W2PJWNNDBQX8CYBDTGM
+    schemaVersion: 1.0.0
+    settings:
+      allowUpScaledImageVariants: true
+      assetVolumeSubFolders: true
+      autoSharpenScaledImages: true
+      capSilhouetteSvgSize: true
+      createColorPalette: false
+      createPlaceholderSilhouettes: true
+      imageTransformTypeSettings:
+        __assoc__:
+          -
+            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
+            -
+              __assoc__:
+                -
+                  - domain
+                  - ''
+                -
+                  - apiKey
+                  - ''
+                -
+                  - securityToken
+                  - ''
+                -
+                  - unsharpMask
+                  - '20'
+          -
+            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+          -
+            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+                -
+                  - securityKey
+                  - ''
+      lowerQualityRetinaImageVariants: true
+      sharpenScaledImagePercentage: 50
+      transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
+system:
+  edition: solo
+  live: true
+  name: '10 Tower Mews'
+  retryDuration: null
+  schemaVersion: 5.3.0.2
+  timeZone: America/New_York

@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 0c37c63b-127b-4f2b-91fa-23c13ccac895 # Places
+handle: places
+maxAuthors: 1
+name: Places
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  d18c4377-f7e9-4de2-8d05-bc52b6bbbf55: # 10 Tower Mews
+    enabledByDefault: true
+    hasUrls: true
+    template: places/_entry.twig
+    uriFormat: 'places/{slug}'
+type: channel

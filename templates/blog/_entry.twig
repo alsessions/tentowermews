@@ -1,0 +1,16 @@
+{% extends "_layouts/_layout.twig" %} {% block content %} {% set image =
+entry.image.one() %}
+
+    {% if entry.description | length %}
+  
+    {% endif %}
+    <h1 class="mb-0">{{ entry.title }}</h1>
+    <span class="text-xl mt-2  mb-10 font-medium uppercase inline-block ">{{ entry.description }} </span>
+    <div class="mt-10">
+        <!-- CKEditor block styles in templates/_partials/entry/* -->
+        {{ entry.longformContent }}
+    </div>
+
+
+    {% endblock %}
+

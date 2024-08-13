@@ -1,0 +1,13 @@
+columnSuffix: null
+handle: download
+instructions: null
+name: Download
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+    - entry
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

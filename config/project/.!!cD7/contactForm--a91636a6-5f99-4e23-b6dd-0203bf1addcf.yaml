@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 8be99c5b-1774-46ad-a76a-b4d17386611d # Contact Form
+handle: contactForm
+maxAuthors: 1
+name: 'Contact Form'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  d18c4377-f7e9-4de2-8d05-bc52b6bbbf55: # 10 Tower Mews
+    enabledByDefault: true
+    hasUrls: true
+    template: contact/contact.twig
+    uriFormat: contact
+type: single

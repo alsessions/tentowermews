@@ -1,0 +1,23 @@
+<div class=" not-prose">
+
+{% set image = entry.image.one() %}
+
+{# This example uses Tailwind CSS #}
+<div class="pl-1 pt-1">
+
+    {# Show thumbnail if it exists #}
+    {% if image %}
+        <img
+            alt="Thumbnail image"
+            src="{{ image.url('photoThumbnail') }}"
+            style="max-width:320px"
+            class="rounded border border-gray-500"
+        >
+    {% endif %}
+
+    <h3 class="text-lg font-medium text-gray-800">{{ entry.title }}</h3>
+    <div class="text-lg">
+        <a href="{{ address.linkToMap() }}" target="_blank">Map</a> &bull;
+        <a href="{{ address.linkToDirections() }}" target="_blank">Directions</a>
+    </div>
+</div>

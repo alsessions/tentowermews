@@ -1,0 +1,13 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+name: 'Longform Content'
+toolbar:
+  - createEntry
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link

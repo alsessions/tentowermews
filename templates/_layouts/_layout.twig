@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>{{ entry.title }} - 10 Tower Mews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6.0, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <link href="/css/styles.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js">
+        
+    </script>
+    <script> (()=>{var i={start(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",()=>this.observe());return}this.observe()},observe(){let s=['[class*=" intersect:"]','[class*=":intersect:"]','[class^="intersect:"]','[class="intersect"]','[class*=" intersect "]','[class^="intersect "]','[class$=" intersect"]'];document.querySelectorAll(s.join(",")).forEach(t=>{let e=new IntersectionObserver(c=>{c.forEach(n=>{if(!n.isIntersecting){t.setAttribute("no-intersect","");return}t.removeAttribute("no-intersect"),t.classList.contains("intersect-once")&&e.disconnect()})},{threshold:this.getThreshold(t)});e.observe(t)})},getThreshold(s){return s.classList.contains("intersect-full")?.99:s.classList.contains("intersect-half")?.5:0}},r=i;r.start();})();
+    </script>
+</head>
+<body class="ltr bg-slate-900">
+    {% include '_partials/_nav.twig' %}
+
+    <!-- Conditional for the places map type -->
+    {% if entry.section.handle == 'places' %}
+        <div class="not-prose w-full mb-20">
+            {% set entries = entry.hotSpots.all() %}
+            {% set options = {
+                'id': 'my-map-5',
+                'infoWindowTemplate': '_partials/info-window.twig'
+            } %}
+            
+            {# Display a dynamic map with all entries #}
+            {{ googleMaps.map(entries, options).tag() }}
+            
+            {# Loop through all entries #}
+            {% for entry in entries %}
+                {# Compile each marker ID #}
+                {% set markerId = "#{entry.id}-googleAddress" %}
+                
+                {# On click, open the info window of the specified marker #}
+                <div onclick="infoWindow('{{ markerId }}')"></div>
+            {% endfor %}
+            
+            {# JavaScript function to switch info windows #}
+            <script>
+                function infoWindow(markerId) {
+                    googleMaps.getMap('my-map-5')    // Get the map
+                        .closeInfoWindow('*')      // Close all info windows
+                        .openInfoWindow(markerId); // Open the specified info window
+                }
+            </script>
+        </div>
+    {% endif %}
+    <!-- End map -->
+
+    <div id="container" class="prose md:prose-lg prose-h1:mb-4 max-w-5xl mx-auto mt-10 mb-20 px-6 min-h-screen">
+        {% block content %}
+
+
+
+        {% endblock %}
+    </div> 
+
+    {% include '_partials/_footer.twig' %}
+</body>
+</html>

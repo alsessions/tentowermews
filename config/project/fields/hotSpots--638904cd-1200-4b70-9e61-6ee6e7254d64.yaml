@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: hotSpots
+instructions: null
+name: 'Hot Spots'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 52756311-3745-491c-8d06-92903af03698 # Hot Spot
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,35 @@
+{% extends "_layouts/_layout.twig" %}
+
+{% block content %}
+
+
+    <h1>{{ entry.title }}</h1>
+    {{ entry.richContent }}
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 not-prose">
+        {% for photo in entry.photo.all() %}
+            <div>
+                <a href="{{ photo.getUrl() }}" class="glightbox">
+                       {{ photo.optimizedPhoto.pictureTag()
+                        .placeholder('image')
+                        .imgAttrs({
+                            'class': 'rounded',
+                        })
+                        .render() }}
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    
+    <script>
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
+</div>
+
+
+
+{% endblock %}

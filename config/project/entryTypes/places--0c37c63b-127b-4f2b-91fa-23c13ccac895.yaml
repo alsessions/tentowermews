@@ -1,0 +1,115 @@
+color: orange
+fieldLayouts:
+  220aa72a-98f3-4484-8e96-6cfa484e518a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6f8dd996-925f-498c-855c-d535fb6ff85f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: 24e21415-b3d1-49cb-8e99-54b8b0abb95e # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d5d0ceb1-4676-4550-ba46-ee0aabf4c7fd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: ed67c01c-23bc-42c9-9d71-fc6a4195951c # Address
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b93b9b24-63d6-4620-8284-0405b36f4efd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: a2b13a80-c6af-4cbc-8d6e-a591c1e9d2fa # Longform Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43c95f4d-d65a-4551-a91d-ae68606cb4a4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T18:27:00+00:00'
+            elementCondition: null
+            fieldUid: d7a74546-c23d-4fd4-8b0b-59ee25014d8a # Hot Spots
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3db33f1b-7663-4637-a526-6f4ef16e7c44
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 157d7f2c-8050-4812-8daf-c6b27722a8fb
+        userCondition: null
+handle: places
+hasTitleField: true
+icon: map
+name: Places
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

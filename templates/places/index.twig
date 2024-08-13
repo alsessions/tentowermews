@@ -1,0 +1,30 @@
+{% extends "_layouts/_layout.twig" %}
+
+   {% block content %}
+
+    <h1>{{ entry.title }}</h1>
+
+    {{ entry.longformContent }}
+
+
+    
+    
+    {% set myEntryQuery = craft.entries()
+        .section('places')
+        .limit(10) %}
+
+    {# Fetch the entries #}
+    {% set entries = myEntryQuery.all() %}
+
+    {# Display the entries #}
+    {% for entry in entries %}
+    <article>
+        <h3><a href="{{ entry.url }}">{{ entry.title }}</a> | {{ entry.postDate | date("M d, Y") }}
+</h3>
+        {% if entry.description | length %}
+        <p>{{ entry. description }}</p>
+        {% endif %}
+    </article>
+    {% endfor %}
+
+   {% endblock %}

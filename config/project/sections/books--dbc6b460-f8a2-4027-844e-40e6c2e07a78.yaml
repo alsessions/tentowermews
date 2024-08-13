@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - f0b1e364-e011-4cf6-88d6-dd9bbf6213a1 # Book
+handle: books
+maxAuthors: 1
+name: Books
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  d18c4377-f7e9-4de2-8d05-bc52b6bbbf55: # 10 Tower Mews
+    enabledByDefault: true
+    hasUrls: true
+    template: books/_entry
+    uriFormat: 'books/{slug}'
+structure:
+  maxLevels: null
+  uid: 8eb131e3-3dba-495e-80d6-96b7a2143d09
+type: structure

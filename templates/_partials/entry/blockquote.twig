@@ -1,0 +1,9 @@
+{% if entry.quote | length %}
+<div class="max-w-3xl mx-auto my-10">
+<blockquote class="px-4 mt-6 mb-0 border-s-2 border-gray-400 not-prose  ">
+    <p class="text-xl italic leading-relaxed not-prose text-gray-300 ">{{ entry.quote }}</p>
+  
+</blockquote>
+<p class="text-right mb-4 mr-20 text-gray-300 font-medium italic not-prose">{% if entry.citation | length %}&mdash; {{ entry.citation }}{% endif %}</p>
+</div>
+{% endif %}

@@ -1,0 +1,23 @@
+{% if entry.galleryImage | length %}
+
+<div class="not-prose"><span class="text-sm italic inline-block text-gray-300 my-1">Select image to enlarge.</span></div>    
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 not-prose">
+    {% for photo in entry.galleryImage.all() %}
+        <div>
+            <a href="{{ photo.getUrl() }}" class="glightbox">
+                <img src="{{ photo.optimizedImage.src() }}"
+                     srcset="{{ photo.optimizedImage.srcsetWebp() }}"
+                     sizes="100vw" />
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+<script>
+    const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true
+    });
+</script>
+{% endif %}

@@ -1,0 +1,99 @@
+color: blue
+fieldLayouts:
+  1ff370a6-dc32-4754-8319-491710e45ef9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d698ca36-44f2-4cc9-b490-11b8cd0724ae
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: 016740df-078c-4322-b1ca-c53663b47c4f # Image
+            handle: null
+            includeInCards: true
+            instructions: 'Every post gets an image.'
+            label: 'Featured Image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90bcb69a-96cb-4699-b646-77b625ee2753
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: 24e21415-b3d1-49cb-8e99-54b8b0abb95e # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ad00e97-6eaa-47e1-ae9f-4525d4ada8db
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: a2b13a80-c6af-4cbc-8d6e-a591c1e9d2fa # Longform Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1c40608d-9e80-4abc-a216-5df1d739d951
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c5fec6fb-1834-4d1d-aafc-b7004ce1904f
+        userCondition: null
+handle: blog
+hasTitleField: true
+icon: newspaper
+name: Blog
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

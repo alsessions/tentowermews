@@ -1,0 +1,43 @@
+{% extends "_layouts/_layout.twig" %}
+
+   {% block content %}
+
+
+    <h1>{{ entry.title }}</h1>
+       
+    {{ entry.longformContent }}
+
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-10 not-prose mt-10">
+    
+    {% set myEntryQuery = craft.entries()
+        .section('books')
+        .limit(10) %}
+
+    {# Fetch the entries #}
+    {% set entries = myEntryQuery.all() %}
+
+    {# Display the entries #}
+    {% for entry in entries %}
+    <div class="grid grid-cols-12 gap-4 ">
+        
+            {% if entry.bookcover | length %}
+          {% for cover in entry.bookcover.all() %}
+          <div class="col-span-4">
+            <a href="{{ entry.url }}">
+        <img src="{{ cover.optimizedCoverSmall.src() }}"
+      srcset="{{ cover.optimizedCoverSmall.srcsetWebp() }}"
+      sizes="100vw" class="object-fill" /></a>
+          </div>
+          {% endfor %}
+{% endif %}
+<div class="col-span-8">
+            <h2 class="text-2xl"><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+            <p>{{ entry.bookAuthor }} | {{ entry.publishedYear}}</p>
+</div>
+    
+        
+    </div>
+    {% endfor %}
+    </div>
+   {% endblock %}

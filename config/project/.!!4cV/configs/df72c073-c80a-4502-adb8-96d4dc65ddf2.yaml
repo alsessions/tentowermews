@@ -1,0 +1,22 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+name: 'Longform Content'
+options:
+  link:
+    decorators:
+      isExternal:
+        attributes:
+          rel: 'noopener noreferrer'
+          target: _blank
+        label: 'Open in a new tab'
+        mode: manual
+toolbar:
+  - createEntry
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link

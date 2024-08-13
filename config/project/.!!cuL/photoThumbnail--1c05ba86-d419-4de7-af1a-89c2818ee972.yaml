@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: photoThumbnail
+height: null
+interlace: none
+mode: crop
+name: 'Photo Thumbnail'
+position: center-center
+quality: 80
+upscale: true
+width: 450

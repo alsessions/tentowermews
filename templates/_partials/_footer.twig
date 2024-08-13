@@ -1,0 +1,8 @@
+<footer class="max-w-6xl text-white mx-auto my-40 px-4">
+    <p>This is the footer.</p>
+    {% if currentUser and entry is defined %}
+    
+      <p class="my-4"><a href="{{ entry.cpEditUrl }}">Edit this entry</a></p>
+  
+{% endif %}
+</footer>

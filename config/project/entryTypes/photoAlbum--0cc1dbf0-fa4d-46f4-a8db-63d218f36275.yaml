@@ -1,0 +1,99 @@
+color: pink
+fieldLayouts:
+  175fcf22-12bc-4d28-a0de-2fcfbb3a8aa6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 91d3346a-eb70-4639-ad4f-5b9967393aaa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: 24e21415-b3d1-49cb-8e99-54b8b0abb95e # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b4a3ca99-cd97-4e04-b9c2-1e933eb5904b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: 3fc3bd38-a76c-403b-bfd1-becc75f3d351 # Rich Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2aad1398-94ff-4f3b-9a8b-9245395bf387
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: 474274ea-afb2-4426-94e9-3dadf756efc2 # Photo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: acd975a2-a33f-4ab5-b6ca-8e45d7739f00
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bf1e0cda-290d-4894-a770-f18c3ff95f34
+        userCondition: null
+handle: photoAlbum
+hasTitleField: true
+icon: camera
+name: 'Photo Album'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

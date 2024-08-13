@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: newBook
+instructions: null
+name: 'New Book'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - b719f79d-7157-42ea-9849-df4e3a67f932 # Item
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

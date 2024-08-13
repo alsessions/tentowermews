@@ -1,0 +1,83 @@
+color: null
+fieldLayouts:
+  77f0fe99-6acd-4020-9eae-8cd77378bc62:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c1212517-3f96-4ccb-872b-4c780ef1b665
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: ed67c01c-23bc-42c9-9d71-fc6a4195951c # Address
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 15cd6dec-4488-442e-a63a-835b98b16578
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-06T17:49:50+00:00'
+            elementCondition: null
+            fieldUid: 016740df-078c-4322-b1ca-c53663b47c4f # Image
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4673ac19-96dd-4c97-92ab-413a19f98ea8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1bd1f180-b2c1-43a7-9104-b3ecc1e50f93
+        userCondition: null
+handle: address
+hasTitleField: true
+icon: null
+name: Address
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

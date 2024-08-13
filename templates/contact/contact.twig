@@ -1,0 +1,12 @@
+{% extends "_layouts/_layout.twig" %}
+
+   {% block content %}
+    <h1>{{ entry.title }}</h1>
+
+    {{ entry.richContent }}
+       <div class="not-prose md:max-w-3xl">
+        {{ craft.formie.renderForm('contact') }}
+
+       </div>
+
+   {% endblock %}

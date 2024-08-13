@@ -1,0 +1,388 @@
+{
+    "handle": "contact",
+    "settings": "{\"displayFormTitle\":false,\"displayCurrentPageTitle\":false,\"displayPageTabs\":false,\"displayPageProgress\":false,\"scrollToTop\":true,\"progressPosition\":\"end\",\"defaultLabelPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"defaultInstructionsPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"requiredIndicator\":\"asterisk\",\"submitMethod\":\"page-reload\",\"submitAction\":\"message\",\"submitActionTab\":null,\"submitActionUrl\":null,\"submitActionFormHide\":false,\"submitActionMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Thanks! \\\"}]},{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"We've gotten your message and will respond appropriately.\\\"}]}]\",\"submitActionMessageTimeout\":null,\"submitActionMessagePosition\":\"top-form\",\"loadingIndicator\":\"spinner\",\"loadingIndicatorText\":null,\"validationOnSubmit\":true,\"validationOnFocus\":false,\"errorMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Couldn\u2019t save submission due to errors.\\\"}]}]\",\"errorMessagePosition\":\"top-form\",\"requireUser\":false,\"requireUserMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleForm\":false,\"scheduleFormStart\":null,\"scheduleFormEnd\":null,\"scheduleFormPendingMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleFormExpiredMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissions\":false,\"limitSubmissionsNumber\":null,\"limitSubmissionsType\":\"total\",\"limitSubmissionsMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"integrations\":{\"recaptcha\":{\"enabled\":\"1\",\"showAllPages\":\"\"}},\"submissionTitleFormat\":\"{field:name1}{timestamp}\",\"collectIp\":false,\"collectUser\":false,\"dataRetention\":null,\"dataRetentionValue\":null,\"fileUploadsAction\":null,\"redirectUrl\":null,\"pageRedirectUrl\":null,\"defaultEmailTemplateId\":null,\"disableCaptchas\":false}",
+    "submitActionEntryId": null,
+    "submitActionEntrySiteId": null,
+    "defaultStatusId": 1,
+    "dataRetention": "forever",
+    "dataRetentionValue": null,
+    "userDeletedAction": "retain",
+    "fileUploadsAction": "retain",
+    "title": "Site Contact",
+    "notifications": [
+        {
+            "name": "Admin Notification",
+            "handle": "adminNotification",
+            "enabled": 1,
+            "subject": "10 Tower Mews Contact Form Submission",
+            "recipients": "email",
+            "to": "fultonchain@10towermews.com, fultonchain@gmail.com",
+            "toConditions": null,
+            "cc": null,
+            "bcc": null,
+            "replyTo": null,
+            "replyToName": null,
+            "from": null,
+            "fromName": null,
+            "sender": null,
+            "content": "[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"},\"content\":[{\"type\":\"text\",\"text\":\"New message from 10 Tower Mews.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"From\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"},\"content\":[{\"type\":\"variableTag\",\"attrs\":{\"label\":\"Name\",\"value\":\"{field:name1}\"}}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"}},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Email\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"},\"content\":[{\"type\":\"variableTag\",\"attrs\":{\"label\":\"Email\",\"value\":\"{field:email}\"}}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"}},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Phone\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"},\"content\":[{\"type\":\"variableTag\",\"attrs\":{\"label\":\"Phone\",\"value\":\"{field:phone}\"}}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"}},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"bold\"}],\"text\":\"Message\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":\"start\"},\"content\":[{\"type\":\"variableTag\",\"attrs\":{\"label\":\"Message\",\"value\":\"{field:message}\"}}]}]",
+            "attachFiles": 1,
+            "attachPdf": null,
+            "attachAssets": "[]",
+            "enableConditions": 0,
+            "conditions": null,
+            "customSettings": "[]",
+            "uid": "811a2f15-e796-4ff5-bc91-3c19e6e92638"
+        }
+    ],
+    "pages": [
+        {
+            "label": "Page 1",
+            "settings": {
+                "submitButtonLabel": "Submit",
+                "backButtonLabel": "Back",
+                "showBackButton": false,
+                "saveButtonLabel": "Save",
+                "showSaveButton": false,
+                "saveButtonStyle": "link",
+                "buttonsPosition": "left",
+                "cssClasses": null,
+                "containerAttributes": null,
+                "inputAttributes": null,
+                "enableNextButtonConditions": false,
+                "nextButtonConditions": [],
+                "enablePageConditions": false,
+                "pageConditions": [],
+                "enableJsEvents": false,
+                "jsGtmEventOptions": []
+            },
+            "rows": [
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Name",
+                            "settings": {
+                                "label": "Name",
+                                "handle": "name1",
+                                "instructions": null,
+                                "required": true,
+                                "useMultipleFields": false,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": "verbb\\formie\\positions\\AboveInput",
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": null,
+                                "includeInEmail": true,
+                                "emailValue": null,
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "contentTable": null,
+                                "subFieldLabelPosition": null,
+                                "rows": [
+                                    {
+                                        "fields": [
+                                            {
+                                                "type": "verbb\\formie\\fields\\subfields\\NamePrefix",
+                                                "settings": {
+                                                    "label": "Prefix",
+                                                    "handle": "prefix",
+                                                    "instructions": null,
+                                                    "required": false,
+                                                    "optgroups": true,
+                                                    "limitOptions": false,
+                                                    "min": null,
+                                                    "max": null,
+                                                    "enabled": false,
+                                                    "matchField": null,
+                                                    "placeholder": null,
+                                                    "defaultValue": null,
+                                                    "prePopulate": null,
+                                                    "errorMessage": null,
+                                                    "labelPosition": null,
+                                                    "instructionsPosition": null,
+                                                    "cssClasses": null,
+                                                    "containerAttributes": null,
+                                                    "inputAttributes": [
+                                                        {
+                                                            "label": "autocomplete",
+                                                            "value": "honorific-prefix"
+                                                        }
+                                                    ],
+                                                    "includeInEmail": true,
+                                                    "emailValue": null,
+                                                    "enableConditions": false,
+                                                    "conditions": null,
+                                                    "enableContentEncryption": false,
+                                                    "visibility": null,
+                                                    "options": [
+                                                        {
+                                                            "label": "Select an option",
+                                                            "value": ""
+                                                        },
+                                                        {
+                                                            "label": "Mr.",
+                                                            "value": "mr"
+                                                        },
+                                                        {
+                                                            "label": "Mrs.",
+                                                            "value": "mrs"
+                                                        },
+                                                        {
+                                                            "label": "Ms.",
+                                                            "value": "ms"
+                                                        },
+                                                        {
+                                                            "label": "Miss.",
+                                                            "value": "miss"
+                                                        },
+                                                        {
+                                                            "label": "Mx.",
+                                                            "value": "mx"
+                                                        },
+                                                        {
+                                                            "label": "Dr.",
+                                                            "value": "dr"
+                                                        },
+                                                        {
+                                                            "label": "Prof.",
+                                                            "value": "prof"
+                                                        }
+                                                    ],
+                                                    "multi": false,
+                                                    "layout": null
+                                                }
+                                            },
+                                            {
+                                                "type": "verbb\\formie\\fields\\subfields\\NameFirst",
+                                                "settings": {
+                                                    "label": "First Name",
+                                                    "handle": "firstName",
+                                                    "instructions": null,
+                                                    "required": false,
+                                                    "limit": false,
+                                                    "min": null,
+                                                    "minType": "characters",
+                                                    "max": null,
+                                                    "maxType": "characters",
+                                                    "uniqueValue": false,
+                                                    "enabled": true,
+                                                    "matchField": null,
+                                                    "placeholder": null,
+                                                    "defaultValue": null,
+                                                    "prePopulate": null,
+                                                    "errorMessage": null,
+                                                    "labelPosition": null,
+                                                    "instructionsPosition": null,
+                                                    "cssClasses": null,
+                                                    "containerAttributes": null,
+                                                    "inputAttributes": [
+                                                        {
+                                                            "label": "autocomplete",
+                                                            "value": "given-name"
+                                                        }
+                                                    ],
+                                                    "includeInEmail": true,
+                                                    "emailValue": null,
+                                                    "enableConditions": false,
+                                                    "conditions": null,
+                                                    "enableContentEncryption": false,
+                                                    "visibility": null
+                                                }
+                                            },
+                                            {
+                                                "type": "verbb\\formie\\fields\\subfields\\NameMiddle",
+                                                "settings": {
+                                                    "label": "Middle Name",
+                                                    "handle": "middleName",
+                                                    "instructions": null,
+                                                    "required": false,
+                                                    "limit": false,
+                                                    "min": null,
+                                                    "minType": "characters",
+                                                    "max": null,
+                                                    "maxType": "characters",
+                                                    "uniqueValue": false,
+                                                    "enabled": false,
+                                                    "matchField": null,
+                                                    "placeholder": null,
+                                                    "defaultValue": null,
+                                                    "prePopulate": null,
+                                                    "errorMessage": null,
+                                                    "labelPosition": null,
+                                                    "instructionsPosition": null,
+                                                    "cssClasses": null,
+                                                    "containerAttributes": null,
+                                                    "inputAttributes": [
+                                                        {
+                                                            "label": "autocomplete",
+                                                            "value": "additional-name"
+                                                        }
+                                                    ],
+                                                    "includeInEmail": true,
+                                                    "emailValue": null,
+                                                    "enableConditions": false,
+                                                    "conditions": null,
+                                                    "enableContentEncryption": false,
+                                                    "visibility": null
+                                                }
+                                            },
+                                            {
+                                                "type": "verbb\\formie\\fields\\subfields\\NameLast",
+                                                "settings": {
+                                                    "label": "Last Name",
+                                                    "handle": "lastName",
+                                                    "instructions": null,
+                                                    "required": false,
+                                                    "limit": false,
+                                                    "min": null,
+                                                    "minType": "characters",
+                                                    "max": null,
+                                                    "maxType": "characters",
+                                                    "uniqueValue": false,
+                                                    "enabled": true,
+                                                    "matchField": null,
+                                                    "placeholder": null,
+                                                    "defaultValue": null,
+                                                    "prePopulate": null,
+                                                    "errorMessage": null,
+                                                    "labelPosition": null,
+                                                    "instructionsPosition": null,
+                                                    "cssClasses": null,
+                                                    "containerAttributes": null,
+                                                    "inputAttributes": [
+                                                        {
+                                                            "label": "autocomplete",
+                                                            "value": "family-name"
+                                                        }
+                                                    ],
+                                                    "includeInEmail": true,
+                                                    "emailValue": null,
+                                                    "enableConditions": false,
+                                                    "conditions": null,
+                                                    "enableContentEncryption": false,
+                                                    "visibility": null
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Email",
+                            "settings": {
+                                "label": "Email",
+                                "handle": "email",
+                                "instructions": null,
+                                "required": true,
+                                "validateDomain": false,
+                                "blockedDomains": [],
+                                "uniqueValue": false,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": true,
+                                "emailValue": null,
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null
+                            }
+                        },
+                        {
+                            "type": "verbb\\formie\\fields\\Phone",
+                            "settings": {
+                                "label": "Phone",
+                                "handle": "phone",
+                                "instructions": null,
+                                "required": false,
+                                "countryEnabled": false,
+                                "countryDefaultValue": null,
+                                "countryAllowed": [],
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": true,
+                                "emailValue": null,
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\MultiLineText",
+                            "settings": {
+                                "label": "Message",
+                                "handle": "message",
+                                "instructions": null,
+                                "required": true,
+                                "limit": false,
+                                "min": null,
+                                "minType": "characters",
+                                "max": null,
+                                "maxType": "characters",
+                                "useRichText": true,
+                                "richTextButtons": [
+                                    "bold",
+                                    "italic"
+                                ],
+                                "uniqueValue": false,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": true,
+                                "emailValue": null,
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "exportVersion": "v3"
+}

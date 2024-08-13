@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 0cc1dbf0-fa4d-46f4-a8db-63d218f36275 # Photo Album
+handle: photos
+maxAuthors: 1
+name: Photos
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  d18c4377-f7e9-4de2-8d05-bc52b6bbbf55: # 10 Tower Mews
+    enabledByDefault: true
+    hasUrls: true
+    template: photos/_entry
+    uriFormat: 'photos/{slug}'
+structure:
+  maxLevels: null
+  uid: ee88dc7f-738c-436d-af04-7b356c4d1e79
+type: structure
