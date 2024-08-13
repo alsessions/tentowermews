@@ -21,6 +21,30 @@ settings:
       __assoc__:
         -
           - width
+          - '1024'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '16'
+        -
+          - aspectRatioY
+          - '9'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - jpg
+    -
+      __assoc__:
+        -
+          - width
           - '640'
         -
           - useAspectRatio
