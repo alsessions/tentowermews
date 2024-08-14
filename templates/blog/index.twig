@@ -1,7 +1,7 @@
 {% extends "_layouts/_layout.twig" %}
 
 {% block content %}
-   <div class="mb-20">
+   <div class="mb-10">
       <h1>{{ entry.title }}</h1>
    </div>
       {{ entry.longformContent }}
@@ -16,7 +16,7 @@
          {% for entry in entries %}
             <div>
                <div>
-                  <span class="mb-2 font-medium inline-block text-gray-300">{{ entry.postDate | date("M d, Y") }}</span>
+                  <span class="mb-2 font-medium inline-block text-gray-700">{{ entry.postDate | date("M d, Y") }}</span>
                   {% set image = entry.image.one() %}
                   <a href="{{ entry.url }}">
                   <img src="{{ image.optimizedBlog.src() }}"
@@ -30,7 +30,7 @@
                      <a href="{{ entry.url }}">{{ entry.title }}</a>
                   </h3>
                   {% if entry.description | length %}
-                     <p class="text-gray-300">{{ entry.description }}</p>
+                     <p class="text-gray-700">{{ entry.description }}</p>
                   {% endif %}
                </div>
             </div>
