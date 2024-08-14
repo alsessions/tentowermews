@@ -330,11 +330,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.3.3",
+            "version": "5.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/812a7db96a9368f36c5653db761c355afc5bde2e",
-                "reference": "812a7db96a9368f36c5653db761c355afc5bde2e",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/6183b53d6aadab0808e673bf1deed675d9f408e4",
+                "reference": "6183b53d6aadab0808e673bf1deed675d9f408e4",
                 "shasum": ""
             },
             "require": {
@@ -431,7 +431,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-08-12T18:52:06+00:00"
+            "time": "2024-08-13T21:06:00+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -1191,11 +1191,11 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.42",
+            "version": "8.13.43",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/b7ee848bbd1958ff7464522d5c6e3688cca2a125",
-                "reference": "b7ee848bbd1958ff7464522d5c6e3688cca2a125",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/62250ef492ea8afedf534381844194f43ff1f7f2",
+                "reference": "62250ef492ea8afedf534381844194f43ff1f7f2",
                 "shasum": ""
             },
             "require": {
@@ -1243,7 +1243,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2024-07-29T07:19:22+00:00"
+            "time": "2024-08-13T12:17:37+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -2722,11 +2722,11 @@
         },
         {
             "name": "nystudio107/craft-plugin-vite",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/848febc3587dc81a69b576f22c2122dcdbd4d4a0",
-                "reference": "848febc3587dc81a69b576f22c2122dcdbd4d4a0",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/023ea9013f03ac8b15c9b800c66943ce4d02cf48",
+                "reference": "023ea9013f03ac8b15c9b800c66943ce4d02cf48",
                 "shasum": ""
             },
             "require": {
@@ -2757,7 +2757,7 @@
                 "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v5/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-vite/issues"
             },
-            "time": "2024-06-13T03:41:28+00:00"
+            "time": "2024-08-14T02:02:01+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -5973,11 +5973,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "3.0.1",
+            "version": "3.0.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/5ab95d9601a51b049e86813f552ceac62e02de30",
-                "reference": "5ab95d9601a51b049e86813f552ceac62e02de30",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/c8534ec269cd1356af027c6d0118adb015a4721d",
+                "reference": "c8534ec269cd1356af027c6d0118adb015a4721d",
                 "shasum": ""
             },
             "require": {
@@ -6034,7 +6034,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2024-08-11T00:30:08+00:00"
+            "time": "2024-08-14T09:58:49+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

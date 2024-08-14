@@ -15,7 +15,7 @@
     <script> (()=>{var i={start(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",()=>this.observe());return}this.observe()},observe(){let s=['[class*=" intersect:"]','[class*=":intersect:"]','[class^="intersect:"]','[class="intersect"]','[class*=" intersect "]','[class^="intersect "]','[class$=" intersect"]'];document.querySelectorAll(s.join(",")).forEach(t=>{let e=new IntersectionObserver(c=>{c.forEach(n=>{if(!n.isIntersecting){t.setAttribute("no-intersect","");return}t.removeAttribute("no-intersect"),t.classList.contains("intersect-once")&&e.disconnect()})},{threshold:this.getThreshold(t)});e.observe(t)})},getThreshold(s){return s.classList.contains("intersect-full")?.99:s.classList.contains("intersect-half")?.5:0}},r=i;r.start();})();
     </script>
 </head>
-<body class="ltr bg-slate-900">
+<body class="ltr">
     {% include '_partials/_nav.twig' %}
 
     <!-- Conditional for the places map type -->

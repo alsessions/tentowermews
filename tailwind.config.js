@@ -9,7 +9,7 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            color: '#F1F5F9',
+            color: '',
             a: {
               color: '#6da8f2',
               textDecoration: 'no-underline',
@@ -20,10 +20,11 @@ module.exports = {
               },
             'h1, h2, h3': { fontWeight: '400' }, 
             },
+
             'h1, h2, h3': { fontWeight: '400' },
-            'h1, h2, h3': { color: 'white' },
-            blockquote: { fontWeight: '400'},
-            blockquote: { color: 'E2E8F0'}
+
+            blockquote: { fontWeight: '400'}
+
           },
         },
       },
