@@ -4,11 +4,12 @@
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 not-prose max-w-4xl mx-auto">
 
     {% for photo in entry.galleryImage.all() %}
-        <div>
+        <div class="not-prose">
             <a href="{{ photo.getUrl() }}" class="glightbox">
                 <img src="{{ photo.optimizedImage.src() }}"
                      srcset="{{ photo.optimizedImage.srcsetWebp() }}"
-                     sizes="100vw" />
+                     sizes="100vw"
+                     class="rounded" />
             </a>
         </div>
     {% endfor %}
