@@ -330,11 +330,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.3.5",
+            "version": "5.3.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/44390826f18b0fab0a192afa87766659fe27b432",
-                "reference": "44390826f18b0fab0a192afa87766659fe27b432",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/5d13fb56c4775fcf0e588e8419f29c957ac2a73d",
+                "reference": "5d13fb56c4775fcf0e588e8419f29c957ac2a73d",
                 "shasum": ""
             },
             "require": {
@@ -431,7 +431,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-08-22T04:28:21+00:00"
+            "time": "2024-08-26T17:21:51+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -5845,11 +5845,11 @@
         },
         {
             "name": "verbb/auth",
-            "version": "2.0.11",
+            "version": "2.0.12",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/auth/zipball/6c2e87106eab8bbf7245efb9989a74692af48f69",
-                "reference": "6c2e87106eab8bbf7245efb9989a74692af48f69",
+                "url": "https://api.github.com/repos/verbb/auth/zipball/c47ff8374eb0e113b2e626ae4d9bad5f2b9e0b77",
+                "reference": "c47ff8374eb0e113b2e626ae4d9bad5f2b9e0b77",
                 "shasum": ""
             },
             "require": {
@@ -5881,7 +5881,7 @@
                 }
             ],
             "description": "A Craft CMS module to make working with authentication for third-parties a breeze.",
-            "time": "2024-08-09T11:21:46+00:00"
+            "time": "2024-08-27T11:10:18+00:00"
         },
         {
             "name": "verbb/base",
