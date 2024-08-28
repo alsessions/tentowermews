@@ -1,4 +1,4 @@
-dateModified: 1724429702
+dateModified: 1724876596
 email:
   fromEmail: fultonchain@10towermews.com
   fromName: '10 Tower Mews'
@@ -161,7 +161,7 @@ plugins:
                         - normal
                       -
                         - theme
-                        - dark
+                        - light
                       -
                         - badge
                         - bottomright
