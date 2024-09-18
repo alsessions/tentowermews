@@ -1,9 +1,10 @@
 {% extends "_layouts/_layout.twig" %}
 
 {% block content %}
-   <div class="mb-10">
-      <h1>{{ entry.title }}</h1>
-   </div>
+<div class="py-20 prose-h2:mt-4">
+   <h1>{{ entry.title }}</h1>
+   <h2 >{{ entry.description }} </h2>
+</div>
       {{ entry.longformContent }}
 
       <div class="grid md:grid-cols-3  gap-10 not-prose">

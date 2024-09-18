@@ -18,10 +18,10 @@ module.exports = {
                 textDecoration: 'underline',
 
               },
-            'h1, h2, h3': { fontWeight: '400', color:'#1f2937' }, 
+            'h1, h2, h3': { fontWeight: '400', color:'#374151' }, 
             },
 
-            'h1, h2, h3': { fontWeight: '400', color:'#1f2937' },
+            'h1, h2, h3': { fontWeight: '400', color:'#374151' },
 
             blockquote: { fontWeight: '400'}
 

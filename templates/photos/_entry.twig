@@ -1,9 +1,10 @@
 {% extends "_layouts/_layout.twig" %}
 
 {% block content %}
-
-
+<div class="py-20 prose-h2:mt-4">
     <h1>{{ entry.title }}</h1>
+    <h2 >{{ entry.description }} </h2>
+</div>
     {{ entry.richContent }}
 
     <div class="grid grid-cols-2 md:grid-cols-3 gap-6 not-prose">
