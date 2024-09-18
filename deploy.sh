@@ -34,14 +34,12 @@ echo 'Installing Composer Packages'
 composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
 
 echo 'Updating Craft'
-php ./craft up --interactive=0
+php craft update/composer-install --interactive=0
+php craft migrate/all --no-content --interactive=0
+php craft project-config/apply
+php craft migrate --track=content --interactive=0
 
-echo 'Clearing Template Caches'
-# php ./craft invalidate-tags/all
 
-echo 'Building Assets'
-# npm install
-# npm run build
 
 echo 'Taking Craft Back Online'
 php ./craft on
