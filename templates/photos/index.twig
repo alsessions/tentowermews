@@ -1,13 +1,15 @@
 {% extends "_layouts/_layout.twig" %}
 
    {% block content %}
-
+   <div class="py-20 prose-h3:mt-4">
     <h1>{{ entry.title }}</h1>
+    <h3 >{{ entry.description }} </h3>
+</div>
 
     {{ entry.longformContent }}
 
 
-    
+    <div class="grid md:grid-cols-3  gap-10 not-prose">
     
     {# Create an entry query with the 'section' and 'limit' parameters #}
                 {% set myEntryQuery = craft.entries()
@@ -19,13 +21,21 @@
 
                 {# Display the entries #}
                 {% for entry in entries %}
-                <article>
-                    <h3><a href="{{ entry.url }}">{{ entry.title }}</a> | {{ entry.postDate | date("M d, Y") }}
-         </h3>
-                    {% if entry.description | length %}
-                    <p>{{ entry. description }}</p>
-                    {% endif %}
-                </article>
+                <div>
+                    {% set image = entry.photo.one() %}
+                    <a href="{{ entry.url }}">
+                    <img src="{{ image.optimizedBlog.src() }}"
+                         srcset="{{ image.optimizedBlog.srcsetWebp() }}"
+                         sizes="100vw"
+                         class="rounded-sm mb-2" />
+                    </a>
+                    <h3 class="text-xl md:text-2xl mb-2">
+                        <a href="{{ entry.url }}">{{ entry.title }}</a>
+                     </h3>
+                     {% if entry.description | length %}
+                        <p class="text-gray-700">{{ entry.description }}</p>
+                     {% endif %}
+        </div>
                 {% endfor %}
-
+    </div>
    {% endblock %}
