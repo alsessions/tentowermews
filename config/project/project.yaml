@@ -1,4 +1,4 @@
-dateModified: 1724876596
+dateModified: 1726776353
 email:
   fromEmail: fultonchain@10towermews.com
   fromName: '10 Tower Mews'
@@ -76,6 +76,7 @@ meta:
     6639307a-8f0d-43f9-8975-fe752c12a0ed: 'Craft 5 Boilerplate' # Craft 5 Boilerplate
     52756311-3745-491c-8d06-92903af03698: 'Hot Spot' # Hot Spot
     74223630-d71f-4cd3-a085-0621ac9a7bed: 'Cover Image' # Cover Image
+    a096a395-3f37-45e7-bbba-840f8ab15ad3: Description # Description
     a2b13a80-c6af-4cbc-8d6e-a591c1e9d2fa: 'Longform Content' # Longform Content
     a4d3998f-1664-4044-a128-b275085d0973: 'ContactForm Header' # ContactForm Header
     b00e8e5e-8178-4c9e-b9c3-45fda13ed1c5: 'Optimized Cover small' # Optimized Cover small
