@@ -18,40 +18,9 @@
 <body class="ltr">
     {% include '_partials/_nav.twig' %}
 
-    <!-- Conditional for the places map type -->
-    {% if entry.section.handle == 'places' %}
-        <div class="not-prose w-full mb-20">
-            {% set entries = entry.hotSpots.all() %}
-            {% set options = {
-                'id': 'my-map-5',
-                'infoWindowTemplate': '_partials/info-window.twig'
-            } %}
-            
-            {# Display a dynamic map with all entries #}
-            {{ googleMaps.map(entries, options).tag() }}
-            
-            {# Loop through all entries #}
-            {% for entry in entries %}
-                {# Compile each marker ID #}
-                {% set markerId = "#{entry.id}-googleAddress" %}
-                
-                {# On click, open the info window of the specified marker #}
-                <div onclick="infoWindow('{{ markerId }}')"></div>
-            {% endfor %}
-            
-            {# JavaScript function to switch info windows #}
-            <script>
-                function infoWindow(markerId) {
-                    googleMaps.getMap('my-map-5')    // Get the map
-                        .closeInfoWindow('*')      // Close all info windows
-                        .openInfoWindow(markerId); // Open the specified info window
-                }
-            </script>
-        </div>
-    {% endif %}
-    <!-- End map -->
+    
 
-    <div id="container" class="prose md:prose-lg prose-h1:mb-4 max-w-5xl mx-auto mt-10 mb-20 px-6 min-h-screen">
+    <div id="container" class="prose md:prose-lg prose-h1:mb-4 max-w-6xl mx-auto mt-10 mb-20 px-6 min-h-screen">
         {% block content %}
 
 
