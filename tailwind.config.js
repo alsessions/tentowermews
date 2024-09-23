@@ -9,7 +9,7 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            color: '#3F3F46',
+            color: '#3F3F46', 
             a: {
               color: '#6da8f2',
               textDecoration: 'no-underline',
