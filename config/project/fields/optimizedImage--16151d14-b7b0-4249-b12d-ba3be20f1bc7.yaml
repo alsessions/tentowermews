@@ -12,6 +12,9 @@ settings:
       -
         - images
         - '*'
+      -
+        - photos
+        - '*'
   ignoreFilesOfType:
     - image/svg
     - image/gif
@@ -24,7 +27,7 @@ settings:
           - '1024'
         -
           - useAspectRatio
-          - '1'
+          - ''
         -
           - aspectRatioX
           - '5'
@@ -48,7 +51,7 @@ settings:
           - '640'
         -
           - useAspectRatio
-          - '1'
+          - ''
         -
           - aspectRatioX
           - '5'

@@ -2,13 +2,13 @@
 {% set asset = entry.image.one() %}
 {{ asset.optimizedImage.imgTag()
     .imgAttrs({
-        'class': "mx-auto rounded max-w-4xl ",
+        'class': "mx-auto rounded  ",
         'alt': asset.title,
     })
     .loadingStrategy('lazy')
     .placeholder('image')
     .render() }}
 
-   <p class="mx-auto text-center  text-gray-600  -mt-4 not-prose">{{ entry. caption }}</p>
+   <p class="mx-auto text-center  text-gray-600  -mt-6 not-prose italic">{{ entry. caption }}</p>
 
    {% endif %}
