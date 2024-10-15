@@ -330,11 +330,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.4.6",
+            "version": "5.4.7.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d44a2d4628b02db2290ecff4248ba70f664c070d",
-                "reference": "d44a2d4628b02db2290ecff4248ba70f664c070d",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/7f26db4a36c374117c281707a22b5493335e042b",
+                "reference": "7f26db4a36c374117c281707a22b5493335e042b",
                 "shasum": ""
             },
             "require": {
@@ -431,7 +431,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-09-27T18:53:45+00:00"
+            "time": "2024-10-09T08:30:12+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -1191,16 +1191,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.46",
+            "version": "8.13.47",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/b75c463fce43a61cc206ea18cd5f2cc3ed5e6555",
-                "reference": "b75c463fce43a61cc206ea18cd5f2cc3ed5e6555",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/717d328bb7154f439c33136e93da37d614c14432",
+                "reference": "717d328bb7154f439c33136e93da37d614c14432",
                 "shasum": ""
             },
             "require": {
-                "giggsey/locale": "^1.7|^2.0",
-                "php": ">=5.3.2",
+                "giggsey/locale": "^2.0",
+                "php": "^7.4|^8.0",
                 "symfony/polyfill-mbstring": "^1.17"
             },
             "replace": {
@@ -1243,7 +1243,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2024-09-25T08:54:14+00:00"
+            "time": "2024-10-08T09:43:12+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -2297,11 +2297,11 @@
         },
         {
             "name": "mollie/mollie-api-php",
-            "version": "v2.72.0",
+            "version": "v2.73.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/cdfb298ff61737a077554c001e936e6134e7ed8e",
-                "reference": "cdfb298ff61737a077554c001e936e6134e7ed8e",
+                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/0a26175492d4c55bb461e44fe3e63546539b81c1",
+                "reference": "0a26175492d4c55bb461e44fe3e63546539b81c1",
                 "shasum": ""
             },
             "require": {
@@ -2368,16 +2368,11 @@
                 "sofortbanking",
                 "subscriptions"
             ],
-            "time": "2024-09-11T15:06:31+00:00"
+            "time": "2024-09-30T13:16:57+00:00"
         },
         {
             "name": "moneyphp/money",
             "version": "v4.5.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/moneyphp/money.git",
-                "reference": "142107bec4870ac2586057dc2fe917d25c92a91e"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/moneyphp/money/zipball/142107bec4870ac2586057dc2fe917d25c92a91e",
@@ -2389,24 +2384,6 @@
                 "ext-filter": "*",
                 "ext-json": "*",
                 "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
-            },
-            "require-dev": {
-                "cache/taggable-cache": "^1.1.0",
-                "doctrine/coding-standard": "^12.0",
-                "doctrine/instantiator": "^1.5.0 || ^2.0",
-                "ext-gmp": "*",
-                "ext-intl": "*",
-                "florianv/exchanger": "^2.8.1",
-                "florianv/swap": "^4.3.0",
-                "moneyphp/crypto-currencies": "^1.1.0",
-                "moneyphp/iso-currencies": "^3.4",
-                "php-http/message": "^1.16.0",
-                "php-http/mock-client": "^1.6.0",
-                "phpbench/phpbench": "^1.2.5",
-                "phpunit/phpunit": "^10.5.9",
-                "psalm/plugin-phpunit": "^0.18.4",
-                "psr/cache": "^1.0.1 || ^2.0 || ^3.0",
-                "vimeo/psalm": "~5.20.0"
             },
             "suggest": {
                 "ext-gmp": "Calculate without integer limits",
@@ -2426,7 +2403,6 @@
                     "Money\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2452,10 +2428,6 @@
                 "money",
                 "vo"
             ],
-            "support": {
-                "issues": "https://github.com/moneyphp/money/issues",
-                "source": "https://github.com/moneyphp/money/tree/v4.5.1"
-            },
             "time": "2024-09-27T12:04:27+00:00"
         },
         {
@@ -3242,11 +3214,11 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.32.0",
+            "version": "1.33.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/6ca22b154efdd9e3c68c56f5d94670920a1c19a4",
-                "reference": "6ca22b154efdd9e3c68c56f5d94670920a1c19a4",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/82a311fd3690fb2bf7b64d5c98f912b3dd746140",
+                "reference": "82a311fd3690fb2bf7b64d5c98f912b3dd746140",
                 "shasum": ""
             },
             "require": {
@@ -3264,7 +3236,7 @@
                 "MIT"
             ],
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
-            "time": "2024-09-26T07:23:32+00:00"
+            "time": "2024-10-13T11:25:22+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
@@ -5915,11 +5887,6 @@
         {
             "name": "verbb/auth",
             "version": "2.0.17",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/verbb/auth.git",
-                "reference": "3acf7e325c71b1dde031bf72657261c36e4b1497"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/verbb/auth/zipball/3acf7e325c71b1dde031bf72657261c36e4b1497",
@@ -5945,7 +5912,6 @@
                     "verbb\\auth\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5956,19 +5922,6 @@
                 }
             ],
             "description": "A Craft CMS module to make working with authentication for third-parties a breeze.",
-            "support": {
-                "docs": "https://github.com/verbb/auth",
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/auth/issues?state=open",
-                "rss": "https://github.com/verbb/auth/commits/v2.atom",
-                "source": "https://github.com/verbb/auth"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/verbb",
-                    "type": "github"
-                }
-            ],
             "time": "2024-09-27T09:59:59+00:00"
         },
         {
@@ -6058,11 +6011,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "3.0.7",
+            "version": "3.0.8",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/c1327f73b49ebdb6f3e288edbc4a291afdecb4d5",
-                "reference": "c1327f73b49ebdb6f3e288edbc4a291afdecb4d5",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/801515835ba853ef4cd902686668692afeb1ffa8",
+                "reference": "801515835ba853ef4cd902686668692afeb1ffa8",
                 "shasum": ""
             },
             "require": {
@@ -6079,7 +6032,7 @@
                 "php": "^8.2",
                 "stripe/stripe-php": "^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0 || ^13.0",
                 "symfony/expression-language": "^5.3.0",
-                "verbb/auth": "^2.0.13",
+                "verbb/auth": "^2.0.15",
                 "verbb/base": "^3.0.4",
                 "voku/anti-xss": "^4.1"
             },
@@ -6119,7 +6072,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2024-09-14T09:05:30+00:00"
+            "time": "2024-10-09T09:50:56+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -7311,11 +7264,11 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.19.2",
+            "version": "v4.19.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/0ed4c8949a32986043e977dbe14776c14d644c45",
-                "reference": "0ed4c8949a32986043e977dbe14776c14d644c45",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/715f4d25e225bc47b293a8b997fe6ce99bf987d2",
+                "reference": "715f4d25e225bc47b293a8b997fe6ce99bf987d2",
                 "shasum": ""
             },
             "require": {
@@ -7349,7 +7302,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2024-09-17T19:36:00+00:00"
+            "time": "2024-09-29T15:01:53+00:00"
         },
         {
             "name": "psy/psysh",
