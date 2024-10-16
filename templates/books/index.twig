@@ -5,7 +5,7 @@
 
    <div class="py-10 prose-h3:mt-4">
     <h1>{{ entry.title }}</h1>
-    <h3 >{{ entry.description }} </h3>
+    <h3 class="max-w-3xl font-sans">{{ entry.description | markdown }} </h3>
 </div>
        
     {{ entry.longformContent }}
@@ -35,7 +35,7 @@
           {% endfor %}
 {% endif %}
 <div class="col-span-8">
-            <h2 class="text-2xl"><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+            <h2 class="text-2xl font-normal"><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
             <p>{{ entry.bookAuthor }} | {{ entry.publishedYear}}</p>
 </div>
     

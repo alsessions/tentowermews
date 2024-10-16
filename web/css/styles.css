@@ -1497,6 +1497,10 @@ input, textarea{
   text-align: right;
 }
 
+.font-sans{
+  font-family: Roboto, sans-serif;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
