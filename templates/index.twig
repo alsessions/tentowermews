@@ -27,12 +27,28 @@
 
       
         <div class="grid md:grid-cols-12 md:gap-10">
+
+            
             <div class="col-span-7 prose md:prose-lg max-w-5xl">
                 {% block content %}
-                    {{ entry.richContent }}
+                    {% if entry.image | length %}
+                    {% for image in entry.image.all() %}
+                    
+                    {{ image.optimizedImage.pictureTag()
+                        .imgAttrs({
+                            'class': "mx-auto rounded  ",
+                            'alt': image.title,
+                        })
+                        .loadingStrategy('lazy')
+                        .placeholder('image')
+                        .render() }}
+                    
+                    {% endfor %}
+                    {% endif %}
+                        {{ entry.richContent }}
                 {% endblock %}
         </div>
-            <div class="col-span-5 md:pt-10">
+            <div class="col-span-5">
                 <h2 class="text-xl mb-4 font-medium">Blog</h2>
                 {# Create an entry query with the 'section' and 'limit' parameters #}
                 {% set myEntryQuery = craft.entries()
