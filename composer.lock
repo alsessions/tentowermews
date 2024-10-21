@@ -278,11 +278,11 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.2.0",
+            "version": "4.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/07d72b9d05c8f6383086c598c8d555752b72d797",
-                "reference": "07d72b9d05c8f6383086c598c8d555752b72d797",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/42325ca2cbc79787ff03ae15db417deb73359dce",
+                "reference": "42325ca2cbc79787ff03ae15db417deb73359dce",
                 "shasum": ""
             },
             "require": {
@@ -326,7 +326,7 @@
                 "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
             },
-            "time": "2024-08-15T15:05:08+00:00"
+            "time": "2024-10-21T03:16:03+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -1411,11 +1411,11 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
-                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
+                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
                 "shasum": ""
             },
             "require": {
@@ -1462,7 +1462,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2024-07-18T10:29:17+00:00"
+            "time": "2024-10-17T10:06:22+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -5886,11 +5886,11 @@
         },
         {
             "name": "verbb/auth",
-            "version": "2.0.17",
+            "version": "2.0.18",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/auth/zipball/3acf7e325c71b1dde031bf72657261c36e4b1497",
-                "reference": "3acf7e325c71b1dde031bf72657261c36e4b1497",
+                "url": "https://api.github.com/repos/verbb/auth/zipball/9e96f4beee8f4a040315c4d543ab059d0e870834",
+                "reference": "9e96f4beee8f4a040315c4d543ab059d0e870834",
                 "shasum": ""
             },
             "require": {
@@ -5922,7 +5922,7 @@
                 }
             ],
             "description": "A Craft CMS module to make working with authentication for third-parties a breeze.",
-            "time": "2024-09-27T09:59:59+00:00"
+            "time": "2024-10-20T01:34:21+00:00"
         },
         {
             "name": "verbb/base",
@@ -5957,11 +5957,11 @@
         },
         {
             "name": "verbb/expanded-singles",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/expanded-singles/zipball/c5814abd424a1e62ec46461250a64315a3c686c6",
-                "reference": "c5814abd424a1e62ec46461250a64315a3c686c6",
+                "url": "https://api.github.com/repos/verbb/expanded-singles/zipball/7cd2d1c41344bb0ebacecb5d1e96a493649f6822",
+                "reference": "7cd2d1c41344bb0ebacecb5d1e96a493649f6822",
                 "shasum": ""
             },
             "require": {
@@ -6007,15 +6007,15 @@
                 "docs": "https://github.com/verbb/expanded-singles",
                 "rss": "https://github.com/verbb/expanded-singles/commits/v2.atom"
             },
-            "time": "2024-05-13T00:41:07+00:00"
+            "time": "2024-10-20T02:02:19+00:00"
         },
         {
             "name": "verbb/formie",
-            "version": "3.0.8",
+            "version": "3.0.9",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/801515835ba853ef4cd902686668692afeb1ffa8",
-                "reference": "801515835ba853ef4cd902686668692afeb1ffa8",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/8b9cbacf7312ac7c86995e6f0f8eeb4926e2dd2a",
+                "reference": "8b9cbacf7312ac7c86995e6f0f8eeb4926e2dd2a",
                 "shasum": ""
             },
             "require": {
@@ -6072,7 +6072,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2024-10-09T09:50:56+00:00"
+            "time": "2024-10-20T01:45:05+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -7478,11 +7478,11 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },
