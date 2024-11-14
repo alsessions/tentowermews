@@ -15,7 +15,8 @@
     
     {% set myEntryQuery = craft.entries()
         .section('books')
-        .limit(10) %}
+        .limit(10)
+        .orderBy('postDate DESC') %}
 
     {# Fetch the entries #}
     {% set entries = myEntryQuery.all() %}
