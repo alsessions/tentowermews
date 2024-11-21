@@ -1312,6 +1312,10 @@ video {
   max-width: 64rem;
 }
 
+.max-w-6xl{
+  max-width: 72rem;
+}
+
 .max-w-7xl{
   max-width: 80rem;
 }
@@ -1417,14 +1421,19 @@ video {
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
 }
 
-.bg-gray-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+.border-slate-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(71 85 105 / var(--tw-border-opacity));
 }
 
 .bg-slate-800{
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .object-fill{
@@ -1447,9 +1456,24 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-6{
@@ -1466,6 +1490,14 @@ video {
 
 .pt-20{
   padding-top: 5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-center{
@@ -1861,6 +1893,15 @@ video {
   margin-bottom: 1rem;
 }
 
+.prose-h1\:mb-2 :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))){
+  margin-bottom: 0.5rem;
+}
+
+.prose-h1\:text-white :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .prose-h2\:mb-2 :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))){
   margin-bottom: 0.5rem;
 }
@@ -1871,6 +1912,23 @@ video {
 
 .prose-h3\:mt-4 :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))){
   margin-top: 1rem;
+}
+
+.prose-h3\:mt-2 :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))){
+  margin-top: 0.5rem;
+}
+
+.prose-h3\:mt-1 :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))){
+  margin-top: 0.25rem;
+}
+
+.prose-h3\:mt-0 :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))){
+  margin-top: 0px;
+}
+
+.prose-h3\:text-white :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .prose-p\:text-xl :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))){
@@ -1929,9 +1987,23 @@ video {
     gap: 2.5rem;
   }
 
+  .md\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:prose-h3\:mt-4 :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))){
+    margin-top: 1rem;
   }
 }
 
