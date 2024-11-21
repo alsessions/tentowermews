@@ -5,6 +5,7 @@ name: 'Hot Spots'
 searchable: false
 settings:
   createButtonLabel: null
+  defaultIndexViewMode: cards
   entryTypes:
     - 29a9d713-4234-429a-a978-233cf284b624 # Hot Spot
   includeTableView: false
