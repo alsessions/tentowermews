@@ -1,12 +1,14 @@
 {% extends "_layouts/_layout.twig" %}
 
 {% block content %}
-<div class="py-10 prose-h3:mt-4">
+<div class="w-full bg-gray-200">
+    <div class="py-10 prose-h3:mt-4 mx-auto max-w-4xl">
     <h1>{{ entry.title }}</h1>
     <h3 >{{ entry.description }} </h3>
 </div>
+</div>
     {{ entry.richContent }}
-
+    <div class="mt-10 min-h-screen max-w-4xl mx-auto">
     <div class="grid grid-cols-2 md:grid-cols-3 gap-6 not-prose">
         {% for photo in entry.photo.all() %}
             <div>
@@ -21,7 +23,7 @@
             </div>
         {% endfor %}
     </div>
-    
+    </div>
     <script>
         const lightbox = GLightbox({
             touchNavigation: true,

@@ -2,11 +2,13 @@
 
    {% block content %}
 
-   <div class="py-10 prose-h3:mt-4">
+   <div class="w-full bg-gray-200">
+      <div class="py-10 prose-h3:mt-4 mx-auto max-w-4xl">
       <h1>{{ entry.title }}</h1>
       <h3 >{{ entry.description }} </h3>
    </div>
-
+   </div>
+   <div class="mt-10 min-h-screen max-w-4xl mx-auto">
     {{ entry.longformContent }}
 
 
@@ -43,4 +45,5 @@
      </div>
     {% endfor %}
     </div>
+   </div>
    {% endblock %}
