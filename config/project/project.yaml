@@ -1,4 +1,77 @@
-dateModified: 1731612580
+dateModified: 1732149762
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Singles
+      type: heading
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      defaultViewMode: cards
+      disabled: false
+      key: 'single:7a71015f-850c-47c5-b3ce-8bde92711e20' # Blog Index
+      tableAttributes:
+        - postDate
+        - link
+        - status
+      type: native
+    -
+      key: 'single:3b8b8daf-4ace-451e-9a3d-b76af1bd42b7' # Books Index
+      type: native
+    -
+      key: 'single:603e5ad4-a5f7-48bb-8297-7cab885ecbdb' # Homepage
+      type: native
+    -
+      key: 'single:b9f3864b-8297-47d3-b09a-b77f9bcec822' # Photos Index
+      type: native
+    -
+      key: 'single:7443d378-f073-42ec-a7f5-198574bb19e2' # Places Index
+      type: native
+    -
+      key: 'single:82fc4c03-a718-46b4-b01a-ea38f9b06bf9' # Site Contact
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:3f5a3896-0a71-4283-a79c-9b502a191720' # Blog
+      tableAttributes:
+        - postDate
+        - link
+        - 'field:016740df-078c-4322-b1ca-c53663b47c4f' # Image
+        - status
+      type: native
+    -
+      key: 'section:0ced97c5-a696-4d69-bc59-1e2f16d0e853' # Places
+      type: native
+    -
+      heading: Structures
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: cards
+      disabled: false
+      key: 'section:dbc6b460-f8a2-4027-844e-40e6c2e07a78' # Books
+      tableAttributes:
+        - 'field:c754f218-e9d4-427a-8883-104a5bf39528' # Book Author
+        - postDate
+        - status
+        - link
+      type: native
+    -
+      key: 'section:f7ef8b6d-5cd5-4441-b33f-5e522e848044' # Photos
+      type: native
 email:
   fromEmail: fultonchain@10towermews.com
   fromName: '10 Tower Mews'

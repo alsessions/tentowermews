@@ -1,6 +1,8 @@
 color: null
 fieldLayouts:
   1ab6bd02-1240-407d-9c81-f117e71cfb46:
+    cardView:
+      - 'layoutElement:2dbd28e1-f01f-458a-ab2d-6c0de0bbfd9a'
     tabs:
       -
         elementCondition: null
@@ -25,7 +27,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -34,6 +36,15 @@ fieldLayouts:
             uid: 496038a6-8d14-449c-8c01-cff1b6c208a1
             userCondition: null
             warning: null
+            width: 100
+          -
+            content: "## This is a markdown UI element displayed in a pain.\r\n\r\nRight, right you are.\r\n\r\n- Item One\r\n- Item Two"
+            dateAdded: '2024-11-21T00:05:39+00:00'
+            displayInPane: true
+            elementCondition: null
+            type: craft\fieldlayoutelements\Markdown
+            uid: d8b1e700-199f-4c0a-8740-6b4f0f34192f
+            userCondition: null
             width: 100
           -
             dateAdded: '2024-08-06T17:49:50+00:00'
@@ -78,6 +89,6 @@ showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: null
+titleFormat: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

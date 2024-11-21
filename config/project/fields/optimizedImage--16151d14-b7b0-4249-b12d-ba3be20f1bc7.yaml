@@ -30,10 +30,10 @@ settings:
           - '1'
         -
           - aspectRatioX
-          - '5'
+          - '8'
         -
           - aspectRatioY
-          - '4'
+          - '5'
         -
           - retinaSizes
           -
@@ -54,10 +54,10 @@ settings:
           - '1'
         -
           - aspectRatioX
-          - '5'
+          - '8'
         -
           - aspectRatioY
-          - '4'
+          - '5'
         -
           - retinaSizes
           -
@@ -78,10 +78,10 @@ settings:
           - '1'
         -
           - aspectRatioX
-          - '5'
+          - '8'
         -
           - aspectRatioY
-          - '4'
+          - '5'
         -
           - retinaSizes
           -

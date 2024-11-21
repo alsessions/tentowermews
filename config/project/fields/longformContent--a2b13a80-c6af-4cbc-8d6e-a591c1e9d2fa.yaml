@@ -12,7 +12,6 @@ settings:
   enableSourceEditingForNonAdmins: false
   entryTypes:
     - 72ebf221-eded-472e-9c57-8f70eb819bd6 # Rich Text
-    - 24c96ce3-6cc0-41dd-ae86-6a28a20cec60 # Markdown
     - 132fc26e-094c-4149-a992-4a113940873f # Images
     - 8251a6d8-a905-4f48-b029-09acebd5f68d # Blockquote
     - 76eff017-fd14-466e-be95-e7220bdf3020 # Gallery
