@@ -49,7 +49,7 @@
                 {% endblock %}
         </div>
             <div class="col-span-5">
-                <h2 class="text-xl mb-4 font-medium">Blog</h2>
+                <h2 class="text-xl md:text-2xl mb-4 ">Blog</h2>
                 {# Create an entry query with the 'section' and 'limit' parameters #}
                 {% set myEntryQuery = craft.entries()
                     .section('blog')
@@ -61,9 +61,10 @@
                 {# Display the entries #}
                 {% for entry in entries %}
                     <article>
-                        <h3 class=" mt-4 font-normal">
-                            {{ entry.postDate | date('short') }} | <a href="{{ entry.url }}" class="text-blue-600">{{ entry.title }}</a>
-                        </h3>
+             
+                            <div class=" mt-2 font-normal flex flex-row">
+                                <div class="basis-1/4">{{ entry.postDate | date('short') }}</div><div class="basis-3/4"><a href="{{ entry.url }}" class="text-blue-600">{{ entry.title }}</a></div>
+                            </div>
   
                                  
                     </article>
@@ -71,7 +72,7 @@
        
 
   
-                <h2 class="text-xl mb-4  mt-8 font-medium">Places</h2>
+                <h2 class="text-xl md:text-2xl mb-4  mt-8 ">Places</h2>
                 {# Create an entry query with the 'section' and 'limit' parameters #}
                 {% set myEntryQuery = craft.entries()
                     .section('places')
@@ -83,20 +84,21 @@
                 {# Display the entries #}
                 {% for entry in entries %}
                 <article>
-                    <h3 class=" mt-4 font-normal">
-                        {{ entry.postDate | date('short') }} | <a href="{{ entry.url }}" class="text-blue-600">{{ entry.title }}</a>
-                    </h3>
+                    <div class=" mt-2 font-normal flex flex-row">
+                        <div class="basis-1/4">{{ entry.postDate | date('short') }}</div><div class="basis-3/4"><a href="{{ entry.url }}" class="text-blue-600">{{ entry.title }}</a></div>                   
+                     </div>
 
                              
                 </article>
             {% endfor %}
     
 
-            <h2 class="text-xl mb-4  mt-8 font-medium">Reading</h2>
+            <h2 class="text-xl md:text-2xl mb-4  mt-8 ">Reading</h2>
                 {# Create an entry query with the 'section' and 'limit' parameters #}
                 {% set myEntryQuery = craft.entries()
                     .section('books')
-                    .limit(5) %}
+                    .limit(10)
+                    .orderBy('postDate DESC') %}
 
                 {# Fetch the entries #}
                 {% set entries = myEntryQuery.all() %}
@@ -104,9 +106,9 @@
                 {# Display the entries #}
                 {% for entry in entries %}
                 <article>
-                    <h3 class=" mt-4 font-normal">
-                        {{ entry.postDate | date('short') }} | <a href="{{ entry.url }}" class="text-blue-600">{{ entry.title }}</a>
-                    </h3>
+                    <div class=" mt-2 font-normal flex flex-row">
+                        <div class="basis-1/4">{{ entry.postDate | date('short') }}</div><div class="basis-3/4"><a href="{{ entry.url }}" class="text-blue-600">{{ entry.title }}</a></div>
+                    </div>
 
                              
                 </article>
@@ -114,7 +116,7 @@
 
 
    
-            <h2 class="text-xl mb-4  mt-8 font-medium">Photos</h2>
+            <h2 class="text-xl md:text-2xl mb-4  mt-8 ">Photos</h2>
                 {# Create an entry query with the 'section' and 'limit' parameters #}
                 {% set myEntryQuery = craft.entries()
                     .section('photos')
@@ -126,9 +128,9 @@
                 {# Display the entries #}
                 {% for entry in entries %}
                 <article>
-                    <h3 class=" mt-4 font-normal">
-                        {{ entry.postDate | date('short') }} | <a href="{{ entry.url }}" class="text-blue-600">{{ entry.title }}</a>
-                    </h3>
+                    <div class=" mt-2 font-normal flex flex-row">
+                        <div class="basis-1/4">{{ entry.postDate | date('short') }}</div><div class="basis-3/4"><a href="{{ entry.url }}" class="text-blue-600">{{ entry.title }}</a></div>
+                    </div>
 
                              
                 </article>

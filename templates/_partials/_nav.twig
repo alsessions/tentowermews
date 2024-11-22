@@ -1,7 +1,7 @@
 <nav x-data="{ mobileMenuIsOpen: false }" @click.away="mobileMenuIsOpen = false" class="flex items-center justify-between border-b border-slate-300 px-4 py-4 aria-label="penguin ui menu">
 	<!-- Brand Logo -->
 	<a href="/" class="text-2xl font-medium ">
-		<span class="" >10 Tower Mews</span>
+		<span class="text-slate-800" >10 Tower Mews</span>
 
 	</a>
 	<!-- Desktop Menu -->
@@ -23,10 +23,10 @@
 	</button>
 	<!-- Mobile Menu -->
 	<ul x-cloak x-show="mobileMenuIsOpen" x-transition:enter="transition motion-reduce:transition-none ease-out duration-300" x-transition:enter-start="-translate-y-full" x-transition:enter-end="translate-y-0" x-transition:leave="transition motion-reduce:transition-none ease-out duration-300" x-transition:leave-start="translate-y-0" x-transition:leave-end="-translate-y-full" id="mobileMenu" class="fixed max-h-svh overflow-y-auto inset-x-0 top-0 z-10 flex flex-col divide-y divide-slate-300  border-b border-slate-300 bg-slate-800 px-6 pb-6 pt-6 dark:divide-slate-700 dark:border-slate-700 md:hidden">
-		<li class="py-4"><a href="/blog" class=" uppercase tracking-wider  font-medium text-[#E2E8F0] hover:text-slate-400 hover:underline hover:underline-offset-2 " aria-current="page">Blog</a></li>
-		<li class="py-4"><a href="/albums" class=" uppercase tracking-wider  font-medium text-[#E2E8F0]  hover:text-slate-400 hover:underline hover:underline-offset-2 ">Photos</a></li>
-		<li class="py-4"><a href="/places" class=" uppercase tracking-wider  font-medium text-[#E2E8F0]  hover:text-slate-400 hover:underline hover:underline-offset-2 ">Places</a></li>
-		<li class="py-4"><a href="/books" class=" uppercase tracking-wider  font-medium text-[#E2E8F0]  hover:text-slate-400 hover:underline hover:underline-offset-2 ">Books</a></li>
-		<li class="py-4"><a href="/contact" class=" uppercase tracking-wider  font-medium text-[#E2E8F0]  hover:text-slate-400 hover:underline hover:underline-offset-2 ">Contact</a></li>
+		<li class="py-4"><a href="/blog" class=" uppercase tracking-wider  font-medium text-[#E2E8F0] hover:text-slate-400 hover:underline hover:underline-offset-2 text-slate-800 " aria-current="page">Blog</a></li>
+		<li class="py-4"><a href="/albums" class=" uppercase tracking-wider  font-medium text-[#E2E8F0]  hover:text-slate-400 hover:underline hover:underline-offset-2 text-slate-800 ">Photos</a></li>
+		<li class="py-4"><a href="/places" class=" uppercase tracking-wider  font-medium text-[#E2E8F0]  hover:text-slate-400 hover:underline hover:underline-offset-2 text-slate-800 ">Places</a></li>
+		<li class="py-4"><a href="/books" class=" uppercase tracking-wider  font-medium text-[#E2E8F0]  hover:text-slate-400 hover:underline hover:underline-offset-2 text-slate-800 ">Books</a></li>
+		<li class="py-4"><a href="/contact" class=" uppercase tracking-wider  font-medium text-[#E2E8F0]  hover:text-slate-400 hover:underline hover:underline-offset-2 text-slate-800 ">Contact</a></li>
 	</ul>
 </nav>
