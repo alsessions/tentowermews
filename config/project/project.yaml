@@ -1,4 +1,4 @@
-dateModified: 1732158480
+dateModified: 1733354373
 elementSources:
   craft\elements\Entry:
     -
@@ -195,7 +195,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: PP0XT5LUFHEPK0BR4I86MYI0
-    schemaVersion: 3.4.6
+    schemaVersion: 3.4.7
     settings:
       ajaxTimeout: 10
       alertEmails: null
@@ -443,7 +443,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: DGUQDBJV585FGP170MBR0MI5
-    schemaVersion: 4.5.0
+    schemaVersion: 4.6.0
     settings:
       browserKey: $GOOGLEMAPS_BROWSERKEY
       enableJsLogging: true
