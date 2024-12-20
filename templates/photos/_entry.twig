@@ -2,13 +2,13 @@
 
 {% block content %}
 <div class="w-full bg-slate-900 py-6 md:py-20">
-    <div class="py-4 md:py-10 px-4 prose-h1:mb-2 prose-h3:mt-0 md:prose-h3:mt-4 prose-h1:text-white prose-h3:text-white mx-auto max-w-4xl">
+    <div class="py-4 md:py-10 px-4 prose-h1:mb-2 prose-h3:mt-0 md:prose-h3:mt-4 prose-h1:text-white prose-h3:text-white mx-auto max-w-6xl">
     <h1>{{ entry.title }}</h1>
     <h3 >{{ entry.description }} </h3>
 </div>
 </div>
     {{ entry.richContent }}
-    <div class="mt-10 min-h-screen max-w-4xl mx-auto px-4">
+    <div class="mt-10 min-h-screen max-w-6xl mx-auto px-4">
     <div class="grid grid-cols-2 md:grid-cols-3 gap-6 not-prose">
         {% for photo in entry.photo.all() %}
             <div>

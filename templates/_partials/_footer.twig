@@ -1,11 +1,11 @@
 <footer class="px-4">
   <div class="max-w-7xl mx-auto mt-20 mb-10 flex justify-between">
     <div>
-    <p>All content &copy; Al Sessions, 2024</p>
+    <p class="text-gray-200">All content &copy; Al Sessions, 2024</p>
     </div>
     <div>
     {% if currentUser and entry is defined %}
-       <p><a href="{{ entry.cpEditUrl }}" class="text-gray-600 hover:text-gray-900">Edit this entry</a></p>
+       <p><a href="{{ entry.cpEditUrl }}" class="text-gray-200 hover:text-gray-900">Edit this entry</a></p>
     {% endif %}
     </div>
 </footer>
