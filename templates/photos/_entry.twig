@@ -10,7 +10,8 @@
     {{ entry.richContent }}
     <div class="mt-10 min-h-screen max-w-6xl mx-auto px-4">
     <div class="grid grid-cols-2 md:grid-cols-3 gap-6 not-prose">
-        {% for photo in entry.photo.all() %}
+        {% paginate entry.photo.limit(9) as pageInfo, photos %}
+        {% for photo in photos %}
             <div>
                 <a href="{{ photo.getUrl() }}" class="glightbox">
                        {{ photo.optimizedPhoto.pictureTag()
@@ -23,6 +24,14 @@
             </div>
         {% endfor %}
     </div>
+    
+    <div class="pagination">
+        {% if pageInfo.prevUrl %}
+            <a href="{{ pageInfo.prevUrl }}">Previous</a>
+        {% endif %}
+        {% if pageInfo.nextUrl %}
+            <a href="{{ pageInfo.nextUrl }}">Next</a>
+        {% endif %}
     </div>
     <script>
         const lightbox = GLightbox({
@@ -32,7 +41,4 @@
         });
     </script>
 </div>
-
-
-
 {% endblock %}
