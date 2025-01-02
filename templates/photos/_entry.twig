@@ -8,8 +8,8 @@
 </div>
 </div>
     {{ entry.richContent }}
-    <div class="mt-10 min-h-screen max-w-6xl mx-auto px-4">
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 not-prose">
+    <div x-data="photoGallery()" class="mt-10 min-h-screen max-w-6xl mx-auto px-4">
+    <div id="photo-gallery" class="grid grid-cols-2 md:grid-cols-3 gap-6 not-prose">
         {% paginate entry.photo.limit(9) as pageInfo, photos %}
         {% for photo in photos %}
             <div>
@@ -27,17 +27,43 @@
     
     <div class="pagination">
         {% if pageInfo.prevUrl %}
-            <a href="{{ pageInfo.prevUrl }}">Previous</a>
+            <a href="{{ pageInfo.prevUrl }}" @click.prevent="loadPage('{{ pageInfo.prevUrl }}')">Previous</a>
         {% endif %}
         {% if pageInfo.nextUrl %}
-            <a href="{{ pageInfo.nextUrl }}">Next</a>
+            <a href="{{ pageInfo.nextUrl }}" @click.prevent="loadPage('{{ pageInfo.nextUrl }}')">Next</a>
         {% endif %}
     </div>
     <script>
-        const lightbox = GLightbox({
-            touchNavigation: true,
-            loop: true,
-            autoplayVideos: true
+        function photoGallery() {
+            return {
+                loadPage(url) {
+                    fetch(url)
+                        .then(response => response.text())
+                        .then(html => {
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(html, 'text/html');
+                            const newGallery = doc.querySelector('#photo-gallery').innerHTML;
+                            document.querySelector('#photo-gallery').innerHTML = newGallery;
+                            GLightbox({
+                                touchNavigation: true,
+                                loop: true,
+                                autoplayVideos: true
+                            });
+                        });
+                }
+            }
+        }
+
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('photoGallery', photoGallery);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            GLightbox({
+                touchNavigation: true,
+                loop: true,
+                autoplayVideos: true
+            });
         });
     </script>
 </div>
