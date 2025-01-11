@@ -181,11 +181,11 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.5.4",
+            "version": "1.5.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/bc0593537a463e55cadf45fd938d23b75095b7e1",
-                "reference": "bc0593537a463e55cadf45fd938d23b75095b7e1",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/08c50d5ec4c6ced7d0271d2862dec8c1033283e6",
+                "reference": "08c50d5ec4c6ced7d0271d2862dec8c1033283e6",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +222,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2024-11-27T15:35:25+00:00"
+            "time": "2025-01-08T16:17:16+00:00"
         },
         {
             "name": "composer/semver",
@@ -330,11 +330,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.5.7",
+            "version": "5.5.9",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/b1e323bd8935be2cdbe64e880859a484fbfe216a",
-                "reference": "b1e323bd8935be2cdbe64e880859a484fbfe216a",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/dcec103dc13a4d6626f3226900237a0b5a99c5df",
+                "reference": "dcec103dc13a4d6626f3226900237a0b5a99c5df",
                 "shasum": ""
             },
             "require": {
@@ -432,7 +432,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2024-12-19T17:38:43+00:00"
+            "time": "2025-01-06T18:35:42+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -834,11 +834,11 @@
         },
         {
             "name": "doublesecretagency/craft-googlemaps",
-            "version": "5.1.0",
+            "version": "5.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublesecretagency/craft-googlemaps/zipball/20226a5aac0b99d9b18793a96cdd9d5c5d396279",
-                "reference": "20226a5aac0b99d9b18793a96cdd9d5c5d396279",
+                "url": "https://api.github.com/repos/doublesecretagency/craft-googlemaps/zipball/36d5b9a0e93ec8b8cb496f7e87744934ee3a929f",
+                "reference": "36d5b9a0e93ec8b8cb496f7e87744934ee3a929f",
                 "shasum": ""
             },
             "require": {
@@ -889,7 +889,7 @@
                 "docs": "https://plugins.doublesecretagency.com/google-maps",
                 "issues": "https://github.com/doublesecretagency/craft-googlemaps/issues"
             },
-            "time": "2024-12-03T16:56:22+00:00"
+            "time": "2025-01-11T04:17:22+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -2002,19 +2002,24 @@
         },
         {
             "name": "league/oauth2-client",
-            "version": "2.8.0",
+            "version": "2.7.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/3d5cf8d0543731dfb725ab30e4d7289891991e13",
-                "reference": "3d5cf8d0543731dfb725ab30e4d7289891991e13",
+                "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/160d6274b03562ebeb55ed18399281d8118b76c8",
+                "reference": "160d6274b03562ebeb55ed18399281d8118b76c8",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*",
-                "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5",
-                "php": "^7.1 || >=8.0.0 <8.5.0"
+                "guzzlehttp/guzzle": "^6.0 || ^7.0",
+                "paragonie/random_compat": "^1 || ^2 || ^9.99",
+                "php": "^5.6 || ^7.0 || ^8.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "League\\OAuth2\\Client\\": "src/"
@@ -2047,7 +2052,7 @@
                 "oauth2",
                 "single sign on"
             ],
-            "time": "2024-12-11T05:05:52+00:00"
+            "time": "2023-04-16T18:19:15+00:00"
         },
         {
             "name": "league/uri",
@@ -4097,11 +4102,11 @@
         },
         {
             "name": "spomky-labs/pki-framework",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Spomky-Labs/pki-framework/zipball/0b10c8b53366729417d6226ae89a665f9e2d61b6",
-                "reference": "0b10c8b53366729417d6226ae89a665f9e2d61b6",
+                "url": "https://api.github.com/repos/Spomky-Labs/pki-framework/zipball/5ac374c3e295c8b917208ff41b4d30f76668478c",
+                "reference": "5ac374c3e295c8b917208ff41b4d30f76668478c",
                 "shasum": ""
             },
             "require": {
@@ -4164,7 +4169,7 @@
                 "x509",
                 "x690"
             ],
-            "time": "2024-03-30T18:03:49+00:00"
+            "time": "2025-01-03T09:35:48+00:00"
         },
         {
             "name": "stripe/stripe-php",
@@ -5961,11 +5966,11 @@
         },
         {
             "name": "verbb/auth",
-            "version": "2.0.18",
+            "version": "2.0.19",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/auth/zipball/9e96f4beee8f4a040315c4d543ab059d0e870834",
-                "reference": "9e96f4beee8f4a040315c4d543ab059d0e870834",
+                "url": "https://api.github.com/repos/verbb/auth/zipball/5cf0a91678e418e39dd5227c344901a8a60d0a15",
+                "reference": "5cf0a91678e418e39dd5227c344901a8a60d0a15",
                 "shasum": ""
             },
             "require": {
@@ -5974,7 +5979,7 @@
                 "jakeasmith/http_build_url": "^1.0",
                 "lcobucci/jwt": "^3.4 || ^4.0",
                 "league/oauth1-client": "^1.9",
-                "league/oauth2-client": "^2.0",
+                "league/oauth2-client": "2.7.0",
                 "mollie/mollie-api-php": "^1.19 || ^2.39",
                 "paragonie/random-lib": "^2.0",
                 "php": "^8.2",
@@ -5997,7 +6002,7 @@
                 }
             ],
             "description": "A Craft CMS module to make working with authentication for third-parties a breeze.",
-            "time": "2024-10-20T01:34:21+00:00"
+            "time": "2025-01-03T01:42:59+00:00"
         },
         {
             "name": "verbb/base",
@@ -6648,11 +6653,11 @@
         },
         {
             "name": "web-auth/webauthn-lib",
-            "version": "4.9.1",
+            "version": "4.9.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/fd7a0943c663b325e92ad562c2bcc943e77beeac",
-                "reference": "fd7a0943c663b325e92ad562c2bcc943e77beeac",
+                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/008b25171c27cf4813420d0de31cc059bcc71f1a",
+                "reference": "008b25171c27cf4813420d0de31cc059bcc71f1a",
                 "shasum": ""
             },
             "require": {
@@ -6686,8 +6691,8 @@
             "type": "library",
             "extra": {
                 "thanks": {
-                    "name": "web-auth/webauthn-framework",
-                    "url": "https://github.com/web-auth/webauthn-framework"
+                    "url": "https://github.com/web-auth/webauthn-framework",
+                    "name": "web-auth/webauthn-framework"
                 }
             },
             "autoload": {
@@ -6715,7 +6720,7 @@
                 "fido",
                 "webauthn"
             ],
-            "time": "2024-07-16T18:36:36+00:00"
+            "time": "2025-01-04T09:47:58+00:00"
         },
         {
             "name": "webfactory/phumbor",
