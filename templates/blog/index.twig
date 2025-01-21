@@ -24,10 +24,11 @@
             <span class="mb-2 font-medium inline-block text-gray-300">{{ entry.postDate | date("M d, Y") }}</span>
             {% set image = entry.image.one() %}
             <a href="{{ entry.url }}">
-              <img src="{{ image.optimizedBlog.src() }}"
+                <img src="{{ image.optimizedBlog.src() }}"
                    srcset="{{ image.optimizedBlog.srcsetWebp() }}"
                    sizes="100vw"
-                   class="rounded-sm mb-4" />
+                   class="rounded-sm mb-4"
+                   loading="lazy" />
             </a>
           </div>
           <div>
