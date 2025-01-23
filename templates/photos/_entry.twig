@@ -3,21 +3,25 @@
 {% block content %}
 <div class="w-full bg-slate-900 py-6 md:py-20">
     <div class="py-4 md:py-10 px-4 prose-h1:mb-2 prose-h3:mt-0 md:prose-h3:mt-4 prose-h1:text-white prose-h3:text-white mx-auto max-w-6xl">
-    <h1>{{ entry.title }}</h1>
-    <h3 >{{ entry.description }} </h3>
+        <h1>{{ entry.title }}</h1>
+        <h3>{{ entry.description }}</h3>
+    </div>
 </div>
-</div>
-    {{ entry.richContent }}
-    <div x-data="photoGallery()" class="mt-10 min-h-screen max-w-6xl mx-auto px-4">
+
+{{ entry.richContent }}
+
+<div id="gallery-top" x-data="photoGallery()" class="mt-10 min-h-screen max-w-6xl mx-auto px-4">
     <div id="photo-gallery" class="grid grid-cols-2 md:grid-cols-3 gap-6 not-prose">
         {% paginate entry.photo.limit(9) as pageInfo, photos %}
         {% for photo in photos %}
             <div>
                 <a href="{{ photo.getUrl() }}" class="glightbox">
-                       {{ photo.optimizedPhoto.pictureTag()
+                    {{ photo.optimizedPhoto.pictureTag()
                         .placeholder('image')
                         .imgAttrs({
                             'class': 'rounded shadow-lg',
+                            'loading': 'lazy',
+                            'decoding': 'async'
                         })
                         .render() }}
                 </a>
@@ -25,46 +29,65 @@
         {% endfor %}
     </div>
     
-    <div class="pagination">
+    <div class="flex justify-center gap-4 mt-8 pagination">
+        <div x-show="loading" class="fixed top-0 left-0 right-0 bg-slate-800 text-white text-center py-2">
+            Loading...
+        </div>
         {% if pageInfo.prevUrl %}
-            <a href="{{ pageInfo.prevUrl }}" @click.prevent="loadPage('{{ pageInfo.prevUrl }}')">Previous</a>
+            <a href="{{ pageInfo.prevUrl }}" 
+               @click.prevent="loadPage('{{ pageInfo.prevUrl }}')"
+               class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded transition">
+               Previous
+            </a>
         {% endif %}
         {% if pageInfo.nextUrl %}
-            <a href="{{ pageInfo.nextUrl }}" @click.prevent="loadPage('{{ pageInfo.nextUrl }}')">Next</a>
+            <a href="{{ pageInfo.nextUrl }}" 
+               @click.prevent="loadPage('{{ pageInfo.nextUrl }}')"
+               class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded transition">
+               Next
+            </a>
         {% endif %}
     </div>
-    <script>
-        function photoGallery() {
-            return {
-                loadPage(url) {
-                    fetch(url)
-                        .then(response => response.text())
-                        .then(html => {
-                            const parser = new DOMParser();
-                            const doc = parser.parseFromString(html, 'text/html');
-                            const newGallery = doc.querySelector('#photo-gallery').innerHTML;
-                            document.querySelector('#photo-gallery').innerHTML = newGallery;
-                            GLightbox({
-                                touchNavigation: true,
-                                loop: true,
-                                autoplayVideos: true
-                            });
-                        });
-                }
+</div>
+
+<script>
+function photoGallery() {
+    return {
+        loading: false,
+        async loadPage(url) {
+            this.loading = true;
+            try {
+                const response = await fetch(url);
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                document.getElementById('photo-gallery').innerHTML = doc.getElementById('photo-gallery').innerHTML;
+                document.querySelector('.pagination').innerHTML = doc.querySelector('.pagination').innerHTML;
+                
+                // Reinitialize GLightbox
+                const lightbox = GLightbox({
+                    touchNavigation: true,
+                    loop: true,
+                    autoplayVideos: true
+                });
+                
+                // Smooth scroll to gallery top
+                document.getElementById('gallery-top').scrollIntoView({ behavior: 'smooth' });
+            } catch (error) {
+                console.error('Error loading page:', error);
+            } finally {
+                this.loading = false;
             }
         }
+    }
+}
 
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('photoGallery', photoGallery);
-        });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            GLightbox({
-                touchNavigation: true,
-                loop: true,
-                autoplayVideos: true
-            });
-        });
-    </script>
-</div>
+// Initialize GLightbox on first load
+const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true
+});
+</script>
 {% endblock %}
