@@ -278,15 +278,15 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.4.0",
+            "version": "4.5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/5b219fe06b395b411df0d61137fd750e834b8022",
-                "reference": "5b219fe06b395b411df0d61137fd750e834b8022",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/7a366bae76e17c96bc3eae18d0db9764799dd7ec",
+                "reference": "7a366bae76e17c96bc3eae18d0db9764799dd7ec",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^5.5.0",
+                "craftcms/cms": "^5.6.0",
                 "craftcms/html-field": "^3.1.0",
                 "nystudio107/craft-code-editor": ">=1.0.8 <=1.0.13 || ^1.0.16",
                 "php": "^8.2"
@@ -326,7 +326,7 @@
                 "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
             },
-            "time": "2024-11-12T17:32:39+00:00"
+            "time": "2025-01-23T20:00:00+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -1097,11 +1097,6 @@
         {
             "name": "firebase/php-jwt",
             "version": "v6.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "8f718f4dfc9c5d5f0c994cdfd103921b43592712"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/firebase/php-jwt/zipball/8f718f4dfc9c5d5f0c994cdfd103921b43592712",
@@ -1110,14 +1105,6 @@
             },
             "require": {
                 "php": "^8.0"
-            },
-            "require-dev": {
-                "guzzlehttp/guzzle": "^7.4",
-                "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^9.5",
-                "psr/cache": "^2.0||^3.0",
-                "psr/http-client": "^1.0",
-                "psr/http-factory": "^1.0"
             },
             "suggest": {
                 "ext-sodium": "Support EdDSA (Ed25519) signatures",
@@ -1129,7 +1116,6 @@
                     "Firebase\\JWT\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1151,10 +1137,6 @@
                 "jwt",
                 "php"
             ],
-            "support": {
-                "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v6.11.0"
-            },
             "time": "2025-01-23T05:11:06+00:00"
         },
         {
@@ -2403,11 +2385,16 @@
         },
         {
             "name": "mollie/mollie-api-php",
-            "version": "v2.76.0",
+            "version": "v2.76.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mollie/mollie-api-php.git",
+                "reference": "2a90a9224e6dcc25569e572edfe57ba75455e435"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/b6e9848e4893d1d306fba54da3ac6f4a31a40368",
-                "reference": "b6e9848e4893d1d306fba54da3ac6f4a31a40368",
+                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/2a90a9224e6dcc25569e572edfe57ba75455e435",
+                "reference": "2a90a9224e6dcc25569e572edfe57ba75455e435",
                 "shasum": ""
             },
             "require": {
@@ -2416,6 +2403,13 @@
                 "ext-json": "*",
                 "ext-openssl": "*",
                 "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "eloquent/liberator": "^2.0||^3.0",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3 || ^7.0",
+                "phpstan/phpstan": "^1.12",
+                "phpunit/phpunit": "^8.5 || ^9.5"
             },
             "suggest": {
                 "mollie/oauth2-mollie-php": "Use OAuth to authenticate with the Mollie API. This is needed for some endpoints. Visit https://docs.mollie.com/ for more information."
@@ -2426,6 +2420,7 @@
                     "Mollie\\Api\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-2-Clause"
             ],
@@ -2474,7 +2469,11 @@
                 "sofortbanking",
                 "subscriptions"
             ],
-            "time": "2024-12-18T12:26:03+00:00"
+            "support": {
+                "issues": "https://github.com/mollie/mollie-api-php/issues",
+                "source": "https://github.com/mollie/mollie-api-php/tree/v2.76.1"
+            },
+            "time": "2025-01-24T14:59:44+00:00"
         },
         {
             "name": "moneyphp/money",
@@ -6194,11 +6193,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "3.0.18",
+            "version": "3.0.19",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/79876a8eb78a05e03cdc558863cc331de0d0b04d",
-                "reference": "79876a8eb78a05e03cdc558863cc331de0d0b04d",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/3a7de66115448789af434419fe595655a49becf4",
+                "reference": "3a7de66115448789af434419fe595655a49becf4",
                 "shasum": ""
             },
             "require": {
@@ -6255,7 +6254,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2025-01-17T00:37:06+00:00"
+            "time": "2025-01-24T00:10:50+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
