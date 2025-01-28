@@ -1,50 +1,84 @@
 {% extends "_layouts/_layout.twig" %}
 
-   {% block content %}
-   <div class="w-full bg-slate-800 py-6 md:py-10">
-    <div class="py-4 md:py-10 px-2 prose-h1:mb-2 prose-h3:mt-0 md:prose-h3:mt-4 prose-h1:text-white prose-h3:text-white mx-auto max-w-4xl">
-    <h1>{{ entry.title }}</h1>
-    <h3>{{ entry.bookAuthor }} &nbsp;|&nbsp; {{ entry.publishedYear}} &nbsp;|&nbsp; <a href="{{ entry.download }}" target="_blank" title="Download link"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mb-1 inline-block text-blue-200 hover:text-blue-900">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-    </svg>
-    </a></h3>
-</div>
-   </div>
-  
-
-    
-   <div class=" min-h-screen max-w-4xl mx-auto">
-
-      <div class="md:grid md:grid-cols-6 gap-10 prose-h2:mb-2 prose-h2:mt-6  max-w-none md:mb-20">
-        <div class="col-span-2">
-
-{% if entry.bookcover | length %}
-          {% for cover in entry.bookcover.all() %}
-          <div>
-           
-        <img src="{{ cover.optimizedBookCover.src() }}"
-      srcset="{{ cover.optimizedBookCover.srcsetWebp() }}"
-      sizes="100vw" alt="Cover image of {{ entry.title }}" />
-          </div>
-          {% endfor %}
-{% endif %}
-        </div>
-      <div class="col-span-4">
-
-     
-
-
-          {% if entry.longformContent | length %}
-            {{ entry.longformContent }}
-            {% endif %}
-
-        </div>
-      </div>
+{% block content %}
+<div class="w-full bg-slate-800 py-6 md:py-10">
+    <div class="py-4 md:py-4 px-2 prose-h1:mb-2 prose-h3:mt-0 md:prose-h3:mt-4 prose-h1:text-white prose-h3:text-white mx-auto max-w-4xl">
+        <h1>{{ entry.title }}</h1>
+        <h3>
+            {{ entry.bookAuthor }} &nbsp;|&nbsp; {{ entry.publishedYear }} &nbsp;|&nbsp; 
+            <a href="{{ entry.download }}" target="_blank" title="Download link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mb-1 inline-block text-blue-200 hover:text-blue-900">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+            </a>
+        </h3>
     </div>
-  
-  
-</a>
 
+    {# Set parameters for prev/next elements list #}
+    {% set params = craft.entries.section('books') %}
 
+    {# Get the prev/next elements #}
+    {% set prevEntry = entry.getPrev(params) %}
+    {% set nextEntry = entry.getNext(params) %}
 
-   {% endblock %}
+    {# Output the links if the element exists #}
+    <div class="border-slate-700 py-8 max-w-4xl mx-auto">
+        <nav class="flex items-center justify-between px-4" aria-label="Pagination">
+            <div class="flex justify-between flex-1 gap-x-4">
+                {% if prevEntry %}
+                    <a href="{{ prevEntry.url }}" class="flex items-center px-4 py-2 text-sm font-medium text-slate-300 bg-slate-800 border border-slate-600 rounded-md hover:bg-slate-700 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                        Previous: {{ prevEntry.title }}
+                    </a>
+                {% endif %}
+                
+                {% if nextEntry %}
+                    <a href="{{ nextEntry.url }}" class="flex items-center px-4 py-2 text-sm font-medium text-slate-300 bg-slate-800 border border-slate-600 rounded-md hover:bg-slate-700 transition-colors">
+                        Next: {{ nextEntry.title }}
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                {% endif %}
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="min-h-screen max-w-4xl mx-auto">
+    <div class="md:grid md:grid-cols-6 gap-10 prose-h2:mb-2 prose-h2:mt-6 max-w-none md:mb-20">
+        <div class="col-span-2">
+            {% if entry.bookcover | length %}
+                {% for cover in entry.bookcover.all() %}
+                    <div>
+                        <img src="{{ cover.optimizedBookCover.src() }}"
+                             srcset="{{ cover.optimizedBookCover.srcsetWebp() }}"
+                             sizes="100vw" alt="Cover image of {{ entry.title }}" />
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div class="col-span-4">
+            {% if entry.longformContent | length %}
+                {{ entry.longformContent }}
+            {% endif %}
+        </div>
+    </div>
+    {# List and link the titles and authors of other books #}
+    <div class="mt-10 not-prose">
+        <h2 class="text-lg md:text-2xl font-medium text-white mb-4">Other Books</h2>
+        <ul class="list-none ">
+            {% for book in craft.entries.section('books').id('not ' ~ entry.id).all() %}
+                <li class="mt-1 text-lg">
+                    <a href="{{ book.url }}" class="text-blue-200 hover:text-blue-900">
+                        {{ book.title }}</a>, by {{ book.bookAuthor }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div> 
+</div>
+
+{% endblock %}

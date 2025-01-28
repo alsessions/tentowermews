@@ -2,16 +2,61 @@
 
 {% block content %} 
 
-<div class="w-full bg-slate-800 py-6 md:py-20">
+<div class="w-full bg-slate-800 py-6 md:py-10">
     <div class="py-4 md:py-10 px-4 prose-h1:mb-2 prose-h3:mt-0 md:prose-h3:mt-4 prose-h1:text-white prose-h3:text-white mx-auto max-w-6xl">
     <h1>{{ entry.title }}</h1>
     <h3>{{ entry.description }} </h3>
+</div>
+{# Set parameters for prev/next elements list #}
+{% set params = craft.entries.section('blog') %}
+
+{# Get the prev/next elements #}
+{% set prevEntry = entry.getPrev(params) %}
+{% set nextEntry = entry.getNext(params) %}
+
+{# Output the links if the element exists #}
+<div class="border-slate-700 py-2 max-w-6xl mx-auto">
+    <nav class="flex items-center justify-between px-4" aria-label="Pagination">
+        <div class="flex justify-between flex-1 gap-x-4">
+            {% if prevEntry %}
+                <a href="{{ prevEntry.url }}" class="flex items-center px-4 py-2 text-sm font-medium text-slate-300 bg-slate-800 border border-slate-600 rounded-md hover:bg-slate-700 transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Previous: {{ prevEntry.title }}
+                </a>
+            {% endif %}
+            
+            {% if nextEntry %}
+                <a href="{{ nextEntry.url }}" class="flex items-center px-4 py-2 text-sm font-medium text-slate-300 bg-slate-800 border border-slate-600 rounded-md hover:bg-slate-700 transition-colors">
+                    Next: {{ nextEntry.title }}
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            {% endif %}
+        </div>
+    </nav>
 </div>
 </div>
 <div class="mt-10 min-h-screen max-w-6xl mx-auto px-4">
         <!-- CKEditor block styles in templates/_partials/entry/* -->
         {{ entry.longformContent }}
     </div>
+
+    {# List and link the titles and dates of other blogs #}
+    <div class="mt-10 not-prose max-w-6xl mx-auto">
+        <h2 class="text-lg md:text-2xl font-medium text-white mb-4">Other Posts</h2>
+        <ul class="list-none ">
+            {% for book in craft.entries.section('blog').id('not ' ~ entry.id).all() %}
+                <li class="mt-1 text-lg">
+                    <a href="{{ book.url }}" class="text-blue-200 hover:text-blue-900">
+                        {{ book.title }}</a>, on {{ entry.postDate | date("M d, Y") }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div> 
 </div>
 
     {% endblock %}
